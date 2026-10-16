@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tilín FL · Antipulgas para perros</title>
+<meta name="description" content="Una sola tableta masticable protege a tu perro 3 meses contra pulgas, garrapatas y ácaros. Con silimarina. Desde S/35.">
+<meta name="theme-color" content="#7B1E6C">
+<meta property="og:title" content="Tilín FL · 1 tableta = 3 meses de protección">
+<meta property="og:description" content="Antipulgas, garrapatas y ácaros en tableta masticable. Desde S/35.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://tilinfl.github.io/img/flyer.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#6E1A61; --plum-2:#8E2480; --magenta:#B5288F; --pink:#F3C6E3;
+  --cream:#FBF3EA; --cream-2:#F5E8DA; --ink:#2B1028; --muted:#6F5A6B;
+  --white:#fff; --gold:#FFC93C; --green:#1FAF5A;
+  --r:22px; --shadow:0 18px 40px -18px rgba(110,26,97,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:"Baloo 2",sans-serif;line-height:1.05;letter-spacing:-.5px}
+.wrap{width:min(1160px,100% - 32px);margin-inline:auto}
+.script{font-family:Caveat,cursive;font-weight:700;color:var(--magenta)}
+.tag{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1.5px solid var(--pink);color:var(--plum);font-weight:800;font-size:.85rem;padding:7px 14px;border-radius:99px}
+.hl{background:var(--plum);color:#fff;padding:0 .25em;border-radius:14px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:800;border-radius:99px;padding:16px 28px;font-size:1.05rem;transition:transform .2s,box-shadow .2s,background .2s}
+.btn-main{background:linear-gradient(135deg,var(--magenta),var(--plum));color:#fff;box-shadow:0 12px 28px -10px rgba(181,40,143,.7)}
+.btn-main:hover{transform:translateY(-3px);box-shadow:0 18px 34px -10px rgba(181,40,143,.8)}
+.btn-ghost{background:#fff;color:var(--plum);border:2px solid var(--pink)}
+.btn-ghost:hover{border-color:var(--magenta)}
+.btn-wa{background:var(--green);color:#fff;box-shadow:0 12px 28px -12px rgba(31,175,90,.8)}
+.btn-wa:hover{transform:translateY(-3px)}
+.pulse{animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(181,40,143,.55)}70%{box-shadow:0 0 0 18px rgba(181,40,143,0)}100%{box-shadow:0 0 0 0 rgba(181,40,143,0)}}
+
+/* Recorte de la imagen del afiche */
+.crop{position:relative;overflow:hidden;aspect-ratio:var(--w)/var(--h)}
+.crop img{position:absolute;max-width:none;width:calc(1024 / var(--w) * 100%);left:calc(var(--x) / var(--w) * -100%);top:calc(var(--y) / var(--h) * -100%)}
+
+/* Barra superior */
+.topbar{background:var(--plum);color:#fff;font-weight:700;font-size:.85rem;overflow:hidden;white-space:nowrap}
+.topbar .track{display:inline-flex;gap:48px;padding:9px 0;animation:marquee 28s linear infinite}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* Nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(251,243,234,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(110,26,97,.08)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:8px;font-family:"Baloo 2";font-weight:800;font-size:1.6rem;color:var(--plum)}
+.logo span{background:var(--plum);color:#fff;border-radius:10px;padding:0 8px;font-size:1.1rem}
+.links{display:flex;gap:28px;font-weight:700;color:var(--muted)}
+.links a:hover{color:var(--plum)}
+.cart-btn{position:relative;display:flex;align-items:center;gap:8px;background:var(--plum);color:#fff;font-weight:800;border-radius:99px;padding:10px 18px}
+.cart-btn .count{background:var(--gold);color:var(--ink);border-radius:99px;min-width:22px;height:22px;display:grid;place-items:center;font-size:.8rem}
+.cart-btn.bump{animation:bump .5s}
+@keyframes bump{30%{transform:scale(1.15)}}
+
+/* Hero */
+.hero{position:relative;padding:56px 0 40px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);color:var(--ink);margin:18px 0}
+.hero h1 .script{display:block;font-size:.62em;margin-bottom:4px;transform:rotate(-2deg)}
+.hero p.lead{font-size:1.2rem;color:var(--muted);max-width:520px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin:28px 0 26px}
+.trust{display:flex;gap:22px;flex-wrap:wrap;font-weight:700;color:var(--plum);font-size:.95rem}
+.trust div{display:flex;align-items:center;gap:8px}
+.hero-art{position:relative;max-width:520px;justify-self:center;width:100%}
+.blob{position:absolute;inset:6% 2% 0;background:radial-gradient(circle at 50% 45%,#F7D9EC 0,#F3C6E3 40%,transparent 70%);border-radius:50%;filter:blur(2px);animation:breathe 6s ease-in-out infinite}
+@keyframes breathe{50%{transform:scale(1.05)}}
+.hero-dog{--x:28;--y:486;--w:512;--h:424;position:relative;-webkit-mask-image:radial-gradient(ellipse 72% 78% at 50% 44%,#000 62%,transparent 80%);mask-image:radial-gradient(ellipse 72% 78% at 50% 44%,#000 62%,transparent 80%)}
+.chip{position:absolute;display:flex;align-items:center;gap:8px;background:#fff;border-radius:16px;padding:10px 14px;font-weight:800;font-size:.9rem;box-shadow:var(--shadow);animation:float 5s ease-in-out infinite}
+.chip b{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--pink);font-size:1rem}
+.chip.c1{top:8%;left:-4%}
+.chip.c2{top:44%;right:-6%;animation-delay:-1.6s}
+.chip.c3{bottom:6%;left:2%;animation-delay:-3.2s}
+@keyframes float{50%{transform:translateY(-12px)}}
+.price-badge{position:absolute;top:2%;right:4%;width:108px;height:108px;border-radius:50%;background:var(--gold);display:grid;place-items:center;text-align:center;font-family:"Baloo 2";font-weight:800;line-height:1;color:var(--ink);transform:rotate(10deg);box-shadow:var(--shadow);animation:spinIn 1s cubic-bezier(.2,1.6,.4,1) .4s both}
+.price-badge small{display:block;font-size:.8rem;font-family:Nunito}
+.price-badge strong{font-size:2rem}
+@keyframes spinIn{from{transform:rotate(-120deg) scale(0)}}
+.paw-bg{position:absolute;opacity:.12;color:var(--plum);pointer-events:none}
+
+/* Strip */
+.strip{background:var(--ink);color:#fff;transform:rotate(-1.2deg);margin:20px -10px;overflow:hidden;white-space:nowrap}
+.strip .track{display:inline-flex;gap:40px;padding:16px 0;font-family:"Baloo 2";font-weight:700;font-size:1.3rem;animation:marquee 22s linear infinite}
+.strip .track span::after{content:"🐾";margin-left:40px}
+
+/* Secciones */
+section{padding:84px 0;scroll-margin-top:60px}
+.sec-head{text-align:center;max-width:700px;margin:0 auto 46px}
+.sec-head h2{font-size:clamp(2rem,4.4vw,3.2rem);margin:14px 0 12px}
+.sec-head p{color:var(--muted);font-size:1.1rem}
+
+/* Quiz de señales */
+.quiz{background:#fff;border-radius:32px;padding:40px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.symptoms{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sym{display:flex;align-items:center;gap:10px;text-align:left;padding:14px;border:2px solid var(--cream-2);border-radius:16px;font-weight:700;transition:.2s;background:var(--cream)}
+.sym .ic{font-size:1.4rem}
+.sym:hover{border-color:var(--pink)}
+.sym.on{border-color:var(--magenta);background:#FCEAF5;color:var(--plum)}
+.sym.on::after{content:"✓";margin-left:auto;background:var(--magenta);color:#fff;border-radius:50%;width:22px;height:22px;display:grid;place-items:center;font-size:.8rem}
+.meter{height:14px;background:var(--cream-2);border-radius:99px;overflow:hidden;margin:18px 0 10px}
+.meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--magenta));border-radius:99px;transition:width .5s cubic-bezier(.2,1,.3,1)}
+.quiz-result h3{font-size:2rem;color:var(--plum)}
+.quiz-result p{color:var(--muted);margin-bottom:20px}
+
+/* Selector por peso */
+.picker{background:linear-gradient(160deg,var(--plum),#4A1042);color:#fff;border-radius:36px;padding:48px;position:relative;overflow:hidden}
+.picker h2{font-size:clamp(2rem,4vw,3rem)}
+.picker .sub{color:#E9C9E1;margin:8px 0 30px;font-size:1.1rem}
+.picker-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.weight-out{font-family:"Baloo 2";font-size:clamp(3.5rem,9vw,6rem);font-weight:800;line-height:1}
+.weight-out small{font-size:.35em;color:#E9C9E1}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:14px;border-radius:99px;background:linear-gradient(90deg,var(--gold) var(--p,20%),rgba(255,255,255,.18) var(--p,20%));outline:none;margin:22px 0 10px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:40px;height:40px;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23B5288F'%3E%3Ccircle cx='6' cy='9' r='2.2'/%3E%3Ccircle cx='10' cy='5.5' r='2.2'/%3E%3Ccircle cx='14' cy='5.5' r='2.2'/%3E%3Ccircle cx='18' cy='9' r='2.2'/%3E%3Cpath d='M12 11c-3 0-6 4-6 6.5 0 2 2 2.5 3 2.2 1.4-.4 2-.9 3-.9s1.6.5 3 .9c1 .3 3-.2 3-2.2C18 15 15 11 12 11z'/%3E%3C/svg%3E") center/26px no-repeat;box-shadow:0 6px 16px rgba(0,0,0,.35);cursor:grab}
+input[type=range]::-moz-range-thumb{width:40px;height:40px;border-radius:50%;background:#fff;border:0}
+.scale{display:flex;justify-content:space-between;color:#E9C9E1;font-weight:700;font-size:.85rem}
+.size-dogs{display:flex;align-items:flex-end;gap:18px;margin-top:26px;height:70px}
+.size-dogs span{transition:.35s;opacity:.35;filter:grayscale(1)}
+.size-dogs span.on{opacity:1;filter:none;transform:translateY(-6px)}
+.rec{background:#fff;color:var(--ink);border-radius:28px;padding:26px;text-align:center;position:relative}
+.rec .ribbon{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--ink);font-weight:800;font-size:.85rem;padding:6px 16px;border-radius:99px;white-space:nowrap}
+.rec .crop{width:56%;margin:8px auto 10px;border-radius:12px;filter:drop-shadow(0 18px 18px rgba(0,0,0,.25));transition:transform .4s}
+.rec.swap .crop{animation:swap .45s}
+@keyframes swap{40%{transform:scale(.85) rotate(-6deg)}}
+.rec h3{font-size:1.5rem}
+.rec .price{font-family:"Baloo 2";font-weight:800;font-size:3rem;color:var(--plum);line-height:1;margin:6px 0}
+.rec .price small{font-size:.45em}
+.rec .per{color:var(--muted);font-weight:700;font-size:.9rem;margin-bottom:16px}
+.warn{background:rgba(255,201,60,.15);border:1px dashed var(--gold);color:#FFE7A6;border-radius:14px;padding:12px;margin-top:16px;font-size:.9rem;display:none}
+
+/* Productos */
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.prod{background:#fff;border-radius:28px;padding:24px;text-align:center;box-shadow:var(--shadow);transition:transform .3s;position:relative}
+.prod:hover{transform:translateY(-8px)}
+.prod .stage{background:radial-gradient(circle at 50% 70%,var(--pink),transparent 70%);border-radius:20px;padding:18px 0 6px}
+.prod .crop{width:52%;margin:0 auto;border-radius:10px;filter:drop-shadow(0 16px 14px rgba(110,26,97,.35));transition:transform .4s}
+.prod:hover .crop{transform:rotate(-4deg) scale(1.05)}
+.prod .kg{display:inline-block;margin-top:16px;background:var(--cream);color:var(--plum);font-weight:800;padding:6px 14px;border-radius:99px}
+.prod .price{font-family:"Baloo 2";font-weight:800;font-size:2.6rem;color:var(--plum);line-height:1.1;margin:8px 0 2px}
+.prod .price small{font-size:.5em}
+.prod .per{color:var(--muted);font-size:.9rem;font-weight:700;margin-bottom:16px}
+.prod .btn{width:100%}
+.prod .pop{position:absolute;top:16px;right:16px;background:var(--gold);font-weight:800;font-size:.75rem;padding:5px 10px;border-radius:99px}
+.c-blue{--accent:#1E6FD9}.c-pink{--accent:#C2187A}.c-green{--accent:#1B8A3B}
+.prod .kg{border-bottom:3px solid var(--accent)}
+
+/* Beneficios */
+.bens{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.ben{background:#fff;border:2px solid var(--pink);border-radius:24px;padding:28px 22px;transition:.3s}
+.ben:hover{background:var(--plum);color:#fff;transform:translateY(-6px)}
+.ben:hover p{color:#E9C9E1}
+.ben .ico{width:58px;height:58px;border-radius:18px;background:var(--cream);display:grid;place-items:center;font-size:1.8rem;margin-bottom:16px}
+.ben h3{font-size:1.35rem;margin-bottom:6px}
+.ben p{color:var(--muted);font-size:.95rem}
+
+/* Timeline */
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;margin-top:20px}
+.timeline::before{content:"";position:absolute;top:34px;left:12%;right:12%;height:6px;background:var(--cream-2);border-radius:99px}
+.timeline .bar{position:absolute;top:34px;left:12%;height:6px;width:0;background:linear-gradient(90deg,var(--magenta),var(--plum));border-radius:99px;transition:width 2.4s cubic-bezier(.3,.8,.3,1)}
+.timeline.go .bar{width:76%}
+.step{text-align:center;position:relative;padding:0 10px}
+.step .dot{width:74px;height:74px;border-radius:50%;background:#fff;border:4px solid var(--pink);display:grid;place-items:center;font-size:1.8rem;margin:0 auto 14px;position:relative;z-index:1;transition:.4s}
+.timeline.go .step .dot{border-color:var(--magenta)}
+.step h3{font-size:1.25rem;color:var(--plum)}
+.step p{color:var(--muted);font-size:.95rem}
+
+/* Comparativa */
+.compare{background:#fff;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);max-width:820px;margin:0 auto}
+.row{display:grid;grid-template-columns:1.4fr 1fr 1fr;align-items:center;border-bottom:1px solid var(--cream-2)}
+.row>div{padding:16px 20px}
+.row>div:nth-child(2){background:#FCEAF5;text-align:center;font-weight:800;color:var(--plum)}
+.row>div:nth-child(3){text-align:center;color:var(--muted)}
+.row.head{font-family:"Baloo 2";font-weight:800;font-size:1.15rem}
+.row.head>div:nth-child(2){background:var(--plum);color:#fff}
+.row:last-child{border:0}
+
+/* FAQ */
+.faq{max-width:780px;margin:0 auto;display:grid;gap:12px}
+.qa{background:#fff;border-radius:20px;border:2px solid transparent;transition:.2s}
+.qa.open{border-color:var(--pink)}
+.qa button{width:100%;text-align:left;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:20px 22px;font-weight:800;font-size:1.05rem}
+.qa button i{font-style:normal;width:32px;height:32px;flex:none;border-radius:50%;background:var(--cream);display:grid;place-items:center;transition:.3s;color:var(--plum)}
+.qa.open button i{transform:rotate(45deg);background:var(--plum);color:#fff}
+.qa .ans{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.qa .ans p{padding:0 22px 20px;color:var(--muted)}
+
+/* CTA final */
+.final{background:linear-gradient(140deg,var(--magenta),var(--plum));color:#fff;border-radius:40px;padding:56px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;position:relative;overflow:hidden}
+.final h2{font-size:clamp(2.2rem,5vw,3.6rem)}
+.final .script{color:var(--gold);font-size:2rem}
+.final p{color:#F6DDEE;font-size:1.15rem;margin:14px 0 26px}
+.final .boxes{display:flex;justify-content:center;gap:0}
+.final .boxes .crop{width:34%;border-radius:8px;filter:drop-shadow(0 18px 18px rgba(0,0,0,.35))}
+.final .boxes .crop:nth-child(1){transform:rotate(-10deg) translateX(18px)}
+.final .boxes .crop:nth-child(2){transform:translateY(-14px);z-index:1}
+.final .boxes .crop:nth-child(3){transform:rotate(10deg) translateX(-18px)}
+
+footer{padding:40px 0 120px;text-align:center;color:var(--muted);font-size:.9rem}
+footer .logo{justify-content:center;margin-bottom:10px}
+
+/* Carrito */
+.overlay{position:fixed;inset:0;background:rgba(43,16,40,.5);opacity:0;pointer-events:none;transition:.3s;z-index:80}
+.overlay.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(420px,100%);background:var(--cream);z-index:90;transform:translateX(100%);transition:transform .4s cubic-bezier(.2,.9,.3,1);display:flex;flex-direction:column}
+.drawer.on{transform:none}
+.drawer header{display:flex;justify-content:space-between;align-items:center;padding:20px 22px;border-bottom:1px solid var(--cream-2)}
+.drawer header h3{font-size:1.6rem;color:var(--plum)}
+.x{width:40px;height:40px;border-radius:50%;background:#fff;font-size:1.3rem}
+.items{flex:1;overflow:auto;padding:18px 22px;display:grid;gap:12px;align-content:start}
+.item{display:grid;grid-template-columns:60px 1fr auto;gap:14px;align-items:center;background:#fff;border-radius:18px;padding:12px}
+.item .crop{width:60px;border-radius:6px}
+.item h4{font-family:"Baloo 2";font-size:1.05rem;line-height:1.1}
+.item small{color:var(--muted);font-weight:700}
+.qty{display:flex;align-items:center;gap:8px;background:var(--cream);border-radius:99px;padding:4px}
+.qty button{width:28px;height:28px;border-radius:50%;background:#fff;font-weight:800;color:var(--plum)}
+.empty{text-align:center;color:var(--muted);padding:40px 10px}
+.empty div{font-size:3rem}
+.drawer footer{padding:18px 22px 24px;border-top:1px solid var(--cream-2);text-align:left;color:var(--ink)}
+.tot{display:flex;justify-content:space-between;font-family:"Baloo 2";font-weight:800;font-size:1.5rem;margin-bottom:6px}
+.tip{background:#FFF4D1;border-radius:12px;padding:10px 12px;font-size:.88rem;font-weight:700;margin-bottom:14px;display:none}
+.drawer footer .btn{width:100%}
+
+/* Flotantes */
+.wa-float{position:fixed;right:20px;bottom:22px;z-index:60;width:62px;height:62px;border-radius:50%;background:var(--green);display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(31,175,90,.8);transition:transform .2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float .dot-new{position:absolute;top:2px;right:2px;width:16px;height:16px;border-radius:50%;background:#FF3B5C;border:2px solid #fff;display:none}
+.wa-float.has-msg .dot-new{display:block;animation:bump 1s infinite}
+/* Burbuja de bienvenida WhatsApp */
+.wa-chat{position:fixed;right:20px;bottom:96px;z-index:61;width:min(340px,calc(100% - 32px));background:#fff;border-radius:22px;box-shadow:0 24px 50px -14px rgba(43,16,40,.45);overflow:hidden;transform-origin:bottom right;transform:scale(.6) translateY(20px);opacity:0;pointer-events:none;transition:.35s cubic-bezier(.2,1.3,.4,1)}
+.wa-chat.on{transform:none;opacity:1;pointer-events:auto}
+.wa-chat .hd{background:#075E54;color:#fff;display:flex;align-items:center;gap:12px;padding:14px 16px}
+.wa-chat .av{width:42px;height:42px;border-radius:50%;background:var(--cream);display:grid;place-items:center;font-size:1.4rem;position:relative}
+.wa-chat .av::after{content:"";position:absolute;right:0;bottom:1px;width:11px;height:11px;border-radius:50%;background:#25D366;border:2px solid #075E54}
+.wa-chat .hd b{display:block;font-size:1rem}
+.wa-chat .hd small{opacity:.85;font-size:.8rem}
+.wa-chat .hd .x{margin-left:auto;width:32px;height:32px;background:rgba(255,255,255,.15);color:#fff;font-size:1.1rem}
+.wa-chat .bd{background:#ECE5DD;padding:16px;min-height:120px}
+.wa-chat .msg{background:#fff;border-radius:0 14px 14px 14px;padding:10px 12px 6px;font-size:.93rem;max-width:92%;box-shadow:0 1px 1px rgba(0,0,0,.08);margin-bottom:8px;animation:msgIn .35s ease both}
+.wa-chat .msg time{display:block;text-align:right;font-size:.7rem;color:#999}
+@keyframes msgIn{from{opacity:0;transform:translateY(8px)}}
+.typing{display:inline-flex;gap:4px;background:#fff;border-radius:0 14px 14px 14px;padding:12px 14px}
+.typing i{width:7px;height:7px;border-radius:50%;background:#9aa;animation:tp 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes tp{30%{transform:translateY(-5px);opacity:.5}}
+.wa-chat .opts{display:grid;gap:8px;padding:14px 16px 16px}
+.wa-chat .opts a{display:flex;align-items:center;gap:10px;border:1.5px solid #25D366;color:#075E54;font-weight:800;border-radius:14px;padding:11px 14px;font-size:.93rem;transition:.2s;animation:msgIn .35s ease both}
+.wa-chat .opts a:hover{background:#25D366;color:#fff}
+.wa-chat .opts a.main{background:#25D366;color:#fff}
+.mbar{display:none}
+.toast{position:fixed;left:50%;bottom:100px;transform:translate(-50%,30px);background:var(--ink);color:#fff;font-weight:700;padding:12px 20px;border-radius:99px;opacity:0;transition:.35s;z-index:95;white-space:nowrap}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* Animación al hacer scroll */
+.rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+/* Celular */
+@media (max-width:900px){
+  .links{display:none}
+  .hero{padding:28px 0 20px}
+  .hero .wrap,.quiz,.picker-grid,.final{grid-template-columns:1fr}
+  .hero-art{order:-1;max-width:400px}
+  .hero .ctas .btn{flex:1}
+  .chip{font-size:.78rem;padding:8px 10px}
+  .chip b{width:24px;height:24px;font-size:.85rem}
+  .chip.c1{left:0}.chip.c2{right:0}
+  .price-badge{width:84px;height:84px}
+  .price-badge strong{font-size:1.5rem}
+  section{padding:60px 0}
+  .quiz,.picker{padding:26px 20px;border-radius:28px}
+  .symptoms{grid-template-columns:1fr}
+  .products{grid-template-columns:1fr;max-width:420px;margin:0 auto}
+  .bens{grid-template-columns:1fr 1fr;gap:12px}
+  .ben{padding:20px 16px}
+  .ben h3{font-size:1.1rem}
+  .timeline{grid-template-columns:1fr;gap:26px;padding-left:10px}
+  .timeline::before,.timeline .bar{left:46px;top:20px;bottom:20px;right:auto;width:6px;height:auto}
+  .timeline .bar{height:0;transition:height 2.4s}
+  .timeline.go .bar{width:6px;height:calc(100% - 40px)}
+  .step{display:grid;grid-template-columns:74px 1fr;gap:16px;text-align:left;align-items:center}
+  .step .dot{margin:0}
+  .row>div{padding:12px 10px;font-size:.88rem}
+  .final{padding:36px 22px;border-radius:30px;text-align:center}
+  .final .boxes{order:-1}
+  .wa-float{bottom:90px;width:54px;height:54px}
+  .wa-chat{right:16px;bottom:156px}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;padding:12px 16px calc(12px + env(safe-area-inset-bottom));gap:12px;align-items:center;box-shadow:0 -10px 30px -10px rgba(110,26,97,.35);transform:translateY(110%);transition:transform .35s}
+  .mbar.on{transform:none}
+  .mbar .from{line-height:1.1;font-weight:700;color:var(--muted);font-size:.8rem}
+  .mbar .from b{display:block;font-family:"Baloo 2";font-size:1.5rem;color:var(--plum)}
+  .mbar .btn{flex:1;padding:14px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="track" aria-hidden="true">
+  <span>🐾 1 tableta = 3 meses de protección</span><span>💬 Pide fácil por WhatsApp</span><span>🍖 Tableta masticable, sin pipetas ni collares</span><span>🌿 Con silimarina, protector hepático</span>
+  <span>🐾 1 tableta = 3 meses de protección</span><span>💬 Pide fácil por WhatsApp</span><span>🍖 Tableta masticable, sin pipetas ni collares</span><span>🌿 Con silimarina, protector hepático</span>
+</div></div>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo">TILÍN <span>FL</span></a>
+    <div class="links">
+      <a href="#senales">¿Lo necesita?</a><a href="#elige">Elige su tableta</a><a href="#como">Cómo funciona</a><a href="#faq">Preguntas</a>
+    </div>
+    <button class="cart-btn" id="cartBtn" aria-label="Abrir carrito">🛒 <span class="count" id="cartCount">0</span></button>
+  </div>
+</nav>
+
+<header class="hero">
+  <svg class="paw-bg" style="top:12%;left:46%;width:60px;transform:rotate(20deg)" viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="9" r="2.2"/><circle cx="10" cy="5.5" r="2.2"/><circle cx="14" cy="5.5" r="2.2"/><circle cx="18" cy="9" r="2.2"/><path d="M12 11c-3 0-6 4-6 6.5 0 2 2 2.5 3 2.2 1.4-.4 2-.9 3-.9s1.6.5 3 .9c1 .3 3-.2 3-2.2C18 15 15 11 12 11z"/></svg>
+  <svg class="paw-bg" style="bottom:8%;left:4%;width:44px;transform:rotate(-25deg)" viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="9" r="2.2"/><circle cx="10" cy="5.5" r="2.2"/><circle cx="14" cy="5.5" r="2.2"/><circle cx="18" cy="9" r="2.2"/><path d="M12 11c-3 0-6 4-6 6.5 0 2 2 2.5 3 2.2 1.4-.4 2-.9 3-.9s1.6.5 3 .9c1 .3 3-.2 3-2.2C18 15 15 11 12 11z"/></svg>
+  <div class="wrap">
+    <div>
+      <span class="tag rv">🐶 Antipulgas · Garrapatas · Ácaros</span>
+      <h1 class="rv d1"><span class="script">¿Quieres que tu perro esté protegido?</span>Una tableta.<br><span class="hl">3 meses</span> sin pulgas.</h1>
+      <p class="lead rv d2">Tilín FL es una tableta masticable que tu perro come como premio. Sin pipetas que se lavan con el baño, sin collares que huelen. Solo 4 veces al año.</p>
+      <div class="ctas rv d3">
+        <a href="#elige" class="btn btn-main pulse">Elegir su tableta →</a>
+        <a href="#senales" class="btn btn-ghost">¿Mi perro lo necesita?</a>
+      </div>
+      <div class="trust rv d3">
+        <div>✅ Elimina y previene</div><div>🌿 Con silimarina</div><div>🍖 Masticable</div>
+      </div>
+    </div>
+    <div class="hero-art rv">
+      <div class="blob"></div>
+      <div class="crop hero-dog"><img src="img/flyer.jpg" alt="Perro golden retriever feliz" fetchpriority="high"></div>
+      <div class="chip c1"><b>🪳</b>Adiós pulgas</div>
+      <div class="chip c2"><b>🕷️</b>Chau garrapatas</div>
+      <div class="chip c3"><b>🦠</b>Fuera ácaros</div>
+      <div class="price-badge"><div><small>desde</small><strong>S/35</strong></div></div>
+    </div>
+  </div>
+</header>
+
+<div class="strip"><div class="track" aria-hidden="true">
+  <span>Perros más sanos</span><span>Más felices</span><span>Protección por 3 meses</span><span>Para todas las razas</span><span>Tableta masticable</span>
+  <span>Perros más sanos</span><span>Más felices</span><span>Protección por 3 meses</span><span>Para todas las razas</span><span>Tableta masticable</span>
+</div></div>
+
+<!-- QUIZ -->
+<section id="senales">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">Test rápido de 10 segundos</span>
+      <h2>¿Tu perro tiene alguna de estas <span class="hl">señales</span>?</h2>
+      <p>Toca las que hayas notado. Te decimos si es momento de protegerlo.</p>
+    </div>
+    <div class="quiz rv">
+      <div class="symptoms" id="symptoms">
+        <button class="sym"><span class="ic">🐾</span>Se rasca mucho</button>
+        <button class="sym"><span class="ic">👅</span>Se muerde o lame la piel</button>
+        <button class="sym"><span class="ic">🔴</span>Tiene ronchas o piel roja</button>
+        <button class="sym"><span class="ic">🍂</span>Se le cae el pelo por zonas</button>
+        <button class="sym"><span class="ic">🌳</span>Sale al parque o la calle</button>
+        <button class="sym"><span class="ic">🐕</span>Convive con otros animales</button>
+      </div>
+      <div class="quiz-result" id="quizResult">
+        <span class="script" style="font-size:1.6rem">Resultado</span>
+        <div class="meter"><i id="meter"></i></div>
+        <h3 id="qTitle">Toca las señales 👈</h3>
+        <p id="qText">Mientras más señales marques, mayor es el riesgo de que tenga parásitos o los pueda traer a casa.</p>
+        <a href="#elige" class="btn btn-main" id="qBtn">Ver la tableta para su peso</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTOR POR PESO -->
+<section id="elige" style="padding-top:20px">
+  <div class="wrap">
+    <div class="picker rv">
+      <div class="picker-grid">
+        <div>
+          <span class="script" style="color:var(--gold);font-size:1.7rem">Sin adivinar</span>
+          <h2>¿Cuánto pesa tu perro?</h2>
+          <p class="sub">Mueve la huellita y te mostramos la tableta exacta.</p>
+          <div class="weight-out"><span id="kg">8</span><small> kg</small></div>
+          <input type="range" id="range" min="2" max="40" step="0.5" value="8" aria-label="Peso del perro en kilos">
+          <div class="scale"><span>2 kg</span><span>10</span><span>20</span><span>30</span><span>40 kg</span></div>
+          <div class="size-dogs" id="sizeDogs">
+            <span style="font-size:1.8rem">🐕</span><span style="font-size:2.6rem">🐕</span><span style="font-size:3.6rem">🐕</span>
+          </div>
+          <div class="warn" id="warn">⚠️ Para perros de menos de 4.5 kg consulta primero con tu veterinario. Escríbenos y te orientamos.</div>
+        </div>
+        <div class="rec" id="rec">
+          <div class="ribbon">⭐ Ideal para tu perro</div>
+          <div class="crop" id="recImg"><img src="img/flyer.jpg" alt="Caja Tilín FL"></div>
+          <h3 id="recName">Tilín FL 4.5 a 10 kg</h3>
+          <div class="price">S/<span id="recPrice">35</span></div>
+          <div class="per" id="recPer">≈ S/0.39 al día de protección</div>
+          <button class="btn btn-main" style="width:100%" id="recAdd">Agregar al carrito 🛒</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section id="productos" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">Precios claros</span>
+      <h2>Una tableta para <span class="hl">cada tamaño</span></h2>
+      <p>Cada caja trae 1 tableta masticable que protege por 3 meses.</p>
+    </div>
+    <div class="products" id="products"></div>
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="script" style="font-size:1.8rem">¡Su bienestar es nuestra prioridad!</span>
+      <h2>¿Por qué Tilín FL?</h2>
+    </div>
+    <div class="bens">
+      <div class="ben rv"><div class="ico">🛡️</div><h3>Elimina y previene</h3><p>Acaba con pulgas, garrapatas y ácaros y evita que vuelvan.</p></div>
+      <div class="ben rv d1"><div class="ico">📅</div><h3>3 meses de protección</h3><p>Una sola dosis. Te olvidas del tema por todo un trimestre.</p></div>
+      <div class="ben rv d2"><div class="ico">🌿</div><h3>Con silimarina</h3><p>Incluye protector hepático para cuidar su hígado.</p></div>
+      <div class="ben rv d3"><div class="ico">🍖</div><h3>Tableta masticable</h3><p>Se la das como un premio. Nada de pelear con él.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="como" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">Así de simple</span>
+      <h2>1 premio hoy, <span class="hl">90 días</span> tranquilo</h2>
+    </div>
+    <div class="timeline" id="timeline">
+      <div class="bar"></div>
+      <div class="step"><div class="dot">🍖</div><div><h3>Día 1</h3><p>Le das la tableta según su peso.</p></div></div>
+      <div class="step"><div class="dot">🛡️</div><div><h3>Mes 1</h3><p>Pulgas y garrapatas eliminadas.</p></div></div>
+      <div class="step"><div class="dot">🐶</div><div><h3>Mes 2</h3><p>Sigue protegido, aunque se bañe o salga.</p></div></div>
+      <div class="step"><div class="dot">🔁</div><div><h3>Mes 3</h3><p>Le toca su siguiente tableta.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARATIVA -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Tableta vs. <span class="hl">pipeta</span></h2>
+      <p>Por qué cada vez más dueños se pasan a la tableta.</p>
+    </div>
+    <div class="compare rv">
+      <div class="row head"><div></div><div>Tilín FL</div><div>Pipeta mensual*</div></div>
+      <div class="row"><div>Dosis al año</div><div>4</div><div>12</div></div>
+      <div class="row"><div>Se va con el baño</div><div>No ✅</div><div>Puede reducirse</div></div>
+      <div class="row"><div>Deja grasa u olor en el pelo</div><div>No ✅</div><div>Sí</div></div>
+      <div class="row"><div>Fácil de dar</div><div>Como premio ✅</div><div>Hay que sujetarlo</div></div>
+      <div class="row"><div>Protector hepático</div><div>Silimarina ✅</div><div>—</div></div>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:.85rem;margin-top:14px">*Comparación general con pipetas de aplicación mensual.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Preguntas frecuentes</h2></div>
+    <div class="faq" id="faqList">
+      <div class="qa rv"><button>¿Cada cuánto se le da? <i>+</i></button><div class="ans"><p>Una tableta cada 3 meses. Anota la fecha en tu calendario y listo.</p></div></div>
+      <div class="qa rv"><button>¿Cómo sé qué caja comprar? <i>+</i></button><div class="ans"><p>Según el peso de tu perro: 4.5 a 10 kg, 10 a 20 kg o 20 a 40 kg. Usa el selector de arriba o escríbenos y te ayudamos.</p></div></div>
+      <div class="qa rv"><button>¿Se la puedo dar con comida? <i>+</i></button><div class="ans"><p>Es masticable y la mayoría de perros la come sola como premio. Si no, puedes ofrecerla junto a su comida.</p></div></div>
+      <div class="qa rv"><button>¿Puedo bañarlo normalmente? <i>+</i></button><div class="ans"><p>Sí. Como actúa desde adentro, el baño no le quita la protección como pasa con productos que se aplican en la piel.</p></div></div>
+      <div class="qa rv"><button>¿Sirve para cachorros o perras preñadas? <i>+</i></button><div class="ans"><p>Es de uso veterinario. Para cachorros pequeños, perras preñadas o perros con alguna enfermedad, consulta antes con tu veterinario.</p></div></div>
+      <div class="qa rv"><button>¿Cómo hago mi pedido? <i>+</i></button><div class="ans"><p>Agrega tus cajas al carrito y toca "Pedir por WhatsApp". Te llega el pedido listo y coordinamos la entrega y el pago.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="final rv">
+      <div>
+        <span class="script">Protege hoy, su mañana ♡</span>
+        <h2>Tu perro no puede pedírtelo. Tú sí puedes dárselo.</h2>
+        <p>Desde S/35 por 3 meses de protección. Menos de lo que cuesta un baño.</p>
+        <a href="#elige" class="btn btn-main" style="background:#fff;color:var(--plum)">Elegir su tableta →</a>
+      </div>
+      <div class="boxes" id="finalBoxes"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">TILÍN <span>FL</span></div>
+  <p>Para perros de todas las razas y tamaños · Uso veterinario. Lee las indicaciones del empaque.</p>
+</footer>
+
+<!-- Carrito -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Carrito">
+  <header><h3>Tu pedido 🐾</h3><button class="x" id="closeCart" aria-label="Cerrar">×</button></header>
+  <div class="items" id="items"></div>
+  <footer>
+    <div class="tip" id="tip"></div>
+    <div class="tot"><span>Total</span><span id="total">S/0</span></div>
+    <p style="color:var(--muted);font-size:.85rem;margin-bottom:14px">Coordinamos entrega y pago por WhatsApp.</p>
+    <button class="btn btn-wa" id="checkout">💬 Pedir por WhatsApp</button>
+  </footer>
+</aside>
+
+<div class="wa-chat" id="waChat" role="dialog" aria-label="Chat de WhatsApp">
+  <div class="hd"><div class="av">🐶</div><div><b>Tilín FL</b><small>En línea · responde al toque</small></div><button class="x" id="waClose" aria-label="Cerrar">×</button></div>
+  <div class="bd" id="waBody"></div>
+  <div class="opts" id="waOpts"></div>
+</div>
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="dot-new"></span>
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg>
+</a>
+
+<div class="mbar" id="mbar">
+  <div class="from">desde<b>S/35</b></div>
+  <a href="#elige" class="btn btn-main" id="mbarBtn">Elegir su tableta</a>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ====== CONFIGURA AQUÍ ====== */
+const WHATSAPP = "51932595200"; // +51 932 595 200
+const PRODUCTS = [
+  { id:"s", name:"Tilín FL 4.5 a 10 kg", kg:"4.5 a 10 kg", min:4.5, max:10, price:35, color:"c-blue",  crop:{x:62, y:944, w:176, h:340}, dog:"Pequeño" },
+  { id:"m", name:"Tilín FL 10 a 20 kg",  kg:"10 a 20 kg",  min:10,  max:20, price:40, color:"c-pink",  crop:{x:255,y:944, w:177, h:340}, dog:"Mediano", pop:true },
+  { id:"l", name:"Tilín FL 20 a 40 kg",  kg:"20 a 40 kg",  min:20,  max:40, price:45, color:"c-green", crop:{x:450,y:944, w:178, h:340}, dog:"Grande" },
+];
+/* ============================ */
+
+const $ = s => document.querySelector(s);
+const cropHTML = (p, extra="") => `<div class="crop ${extra}" style="--x:${p.crop.x};--y:${p.crop.y};--w:${p.crop.w};--h:${p.crop.h}"><img src="img/flyer.jpg" alt="Caja ${p.name}" loading="lazy"></div>`;
+const perDay = p => (p.price/90).toFixed(2);
+
+// Productos
+$("#products").innerHTML = PRODUCTS.map((p,i)=>`
+  <div class="prod ${p.color} rv d${i+1}">
+    ${p.pop?'<span class="pop">🔥 Más pedido</span>':''}
+    <div class="stage">${cropHTML(p)}</div>
+    <span class="kg">🐕 ${p.dog} · ${p.kg}</span>
+    <div class="price"><small>S/</small>${p.price}</div>
+    <div class="per">≈ S/${perDay(p)} al día · 3 meses</div>
+    <button class="btn btn-main" data-add="${p.id}">Agregar al carrito</button>
+  </div>`).join("");
+$("#finalBoxes").innerHTML = PRODUCTS.map(p=>cropHTML(p)).join("");
+
+// Carrito
+let cart = {};
+try { cart = JSON.parse(localStorage.getItem("tilinCart")) || {}; } catch(e){}
+const save = () => { try { localStorage.setItem("tilinCart", JSON.stringify(cart)); } catch(e){} };
+const byId = id => PRODUCTS.find(p=>p.id===id);
+
+function toast(msg){ const t=$("#toast"); t.textContent=msg; t.classList.add("on"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("on"),2200); }
+function add(id){
+  cart[id]=(cart[id]||0)+1; save(); render();
+  const b=$("#cartBtn"); b.classList.remove("bump"); void b.offsetWidth; b.classList.add("bump");
+  toast("✅ "+byId(id).name+" agregado"); openCart();
+}
+function render(){
+  const ids=Object.keys(cart).filter(k=>cart[k]>0);
+  const n=ids.reduce((a,k)=>a+cart[k],0);
+  const total=ids.reduce((a,k)=>a+cart[k]*byId(k).price,0);
+  $("#cartCount").textContent=n;
+  $("#total").textContent="S/"+total;
+  $("#items").innerHTML = ids.length ? ids.map(k=>{const p=byId(k);return `
+    <div class="item">${cropHTML(p)}<div><h4>${p.name}</h4><small>S/${p.price} c/u · ${cart[k]*3} meses</small></div>
+    <div class="qty"><button data-dec="${k}">−</button><b>${cart[k]}</b><button data-inc="${k}">+</button></div></div>`}).join("")
+    : `<div class="empty"><div>🐶</div><p>Tu carrito está vacío.<br>Elige la tableta según el peso de tu perro.</p></div>`;
+  const tip=$("#tip");
+  if(n===1){ tip.style.display="block"; tip.textContent="💡 Tip: lleva 2 y tu perro queda protegido 6 meses sin volver a pedir."; }
+  else if(n>=2){ tip.style.display="block"; tip.textContent=`🎉 ¡Genial! Tu pedido cubre ${n*3} meses de protección.`; }
+  else tip.style.display="none";
+  $("#checkout").disabled=!n; $("#checkout").style.opacity=n?1:.5;
+}
+function openCart(){ $("#drawer").classList.add("on"); $("#overlay").classList.add("on"); }
+function closeCart(){ $("#drawer").classList.remove("on"); $("#overlay").classList.remove("on"); }
+document.addEventListener("click",e=>{
+  const a=e.target.closest("[data-add]"); if(a) return add(a.dataset.add);
+  const i=e.target.closest("[data-inc]"); if(i){cart[i.dataset.inc]++;save();return render();}
+  const d=e.target.closest("[data-dec]"); if(d){cart[d.dataset.dec]--;if(cart[d.dataset.dec]<=0)delete cart[d.dataset.dec];save();return render();}
+});
+$("#cartBtn").onclick=openCart; $("#closeCart").onclick=closeCart; $("#overlay").onclick=closeCart;
+const wa = txt => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(txt)}`;
+$("#waFloat").href = wa("¡Hola Tilín FL! 👋🐶 Quiero proteger a mi perro y tengo una consulta.");
+
+// Burbuja de bienvenida
+const chat=$("#waChat"), fab=$("#waFloat");
+const hora=()=>new Date().toLocaleTimeString("es-PE",{hour:"2-digit",minute:"2-digit"});
+const OPTS=[
+  ["main","🛒","Quiero comprar ahora","¡Hola Tilín FL! 👋🐶 Quiero comprar mi tableta antipulgas. ¿Me ayudas con el pedido?"],
+  ["","⚖️","¿Qué caja le toca a mi perro?","¡Hola Tilín FL! 👋 Mi perro pesa ___ kg. ¿Qué tableta le corresponde?"],
+  ["","❓","Tengo una consulta","¡Hola Tilín FL! 👋 Tengo una consulta sobre la tableta antipulgas:"],
+];
+let chatShown=false;
+function showChat(){
+  chat.classList.add("on"); fab.classList.remove("has-msg");
+  if(chatShown) return; chatShown=true;
+  const body=$("#waBody");
+  body.innerHTML='<div class="typing"><i></i><i></i><i></i></div>';
+  setTimeout(()=>{
+    body.innerHTML=`<div class="msg">¡Hola! 👋🐾 Bienvenido a <b>Tilín FL</b>.<time>${hora()}</time></div>`;
+    setTimeout(()=>{
+      body.innerHTML+=`<div class="msg">Estoy listo para resolver tus dudas o tomar tu pedido ahora mismo. Una tableta y tu perro queda protegido <b>3 meses</b> 🛡️ ¿En qué te ayudo?<time>${hora()}</time></div>`;
+      $("#waOpts").innerHTML=OPTS.map(([c,i,t,m],k)=>`<a class="${c}" style="animation-delay:${k*.12}s" href="${wa(m)}" target="_blank" rel="noopener">${i} ${t}</a>`).join("");
+    },700);
+  },1100);
+}
+const hideChat=()=>chat.classList.remove("on");
+fab.addEventListener("click",e=>{ e.preventDefault(); chat.classList.contains("on")?hideChat():showChat(); });
+$("#waClose").onclick=hideChat;
+// Se abre sola a los 6 s, una vez por visita
+let seen=false; try{ seen=sessionStorage.getItem("tilinChat")==="1"; }catch(e){}
+if(!seen) setTimeout(()=>{ if(!$("#drawer").classList.contains("on")){ fab.classList.add("has-msg"); showChat(); try{sessionStorage.setItem("tilinChat","1");}catch(e){} } },6000);
+$("#checkout").onclick=()=>{
+  const ids=Object.keys(cart).filter(k=>cart[k]>0); if(!ids.length) return;
+  const total=ids.reduce((a,k)=>a+cart[k]*byId(k).price,0);
+  const lines=ids.map(k=>`• ${cart[k]} x ${byId(k).name} — S/${cart[k]*byId(k).price}`).join("\n");
+  window.open(wa(`Hola 👋 Quiero hacer este pedido de Tilín FL:\n\n${lines}\n\n*Total: S/${total}*\n\nMi perro pesa aprox: ${$("#range").value} kg\nDistrito de entrega: `),"_blank");
+};
+render();
+
+// Selector de peso
+const range=$("#range");
+let current=null;
+function pick(){
+  const v=parseFloat(range.value);
+  $("#kg").textContent = v % 1 ? v.toFixed(1) : v;
+  range.style.setProperty("--p", ((v-2)/(38)*100)+"%");
+  const p = v<=10 ? PRODUCTS[0] : v<=20 ? PRODUCTS[1] : PRODUCTS[2];
+  $("#warn").style.display = v<4.5 ? "block" : "none";
+  [...$("#sizeDogs").children].forEach((s,i)=>s.classList.toggle("on", PRODUCTS[i]===p));
+  if(p!==current){
+    current=p;
+    const box=$("#recImg"); Object.entries(p.crop).forEach(([k,val])=>box.style.setProperty("--"+k,val));
+    $("#recName").textContent=p.name; $("#recPrice").textContent=p.price;
+    $("#recPer").textContent=`≈ S/${perDay(p)} al día de protección`;
+    const r=$("#rec"); r.classList.remove("swap"); void r.offsetWidth; r.classList.add("swap");
+  }
+}
+range.addEventListener("input",pick); pick();
+$("#recAdd").onclick=()=>add(current.id);
+
+// Quiz
+const syms=[...document.querySelectorAll(".sym")];
+const msgs=[
+  ["Toca las señales 👈","Mientras más señales marques, mayor es el riesgo de que tenga parásitos o los pueda traer a casa."],
+  ["Mejor prevenir 🛡️","Aunque no veas pulgas, basta un paseo para que se le peguen. Una tableta lo protege 3 meses."],
+  ["Ojo con esto 👀","Estas señales son típicas de pulgas o ácaros. Es buen momento para protegerlo."],
+  ["¡Necesita protección ya! 🚨","Varias señales juntas indican que probablemente tiene parásitos. Dale su Tilín FL hoy (y si la piel está muy dañada, visita al veterinario)."]
+];
+syms.forEach(s=>s.onclick=()=>{
+  s.classList.toggle("on");
+  const n=syms.filter(x=>x.classList.contains("on")).length;
+  $("#meter").style.width=(n/syms.length*100)+"%";
+  const m = n===0?msgs[0]: n<=1?msgs[1]: n<=3?msgs[2]:msgs[3];
+  $("#qTitle").textContent=m[0]; $("#qText").textContent=m[1];
+});
+
+// FAQ
+document.querySelectorAll(".qa").forEach(q=>q.querySelector("button").onclick=()=>{
+  const open=q.classList.toggle("open"); const a=q.querySelector(".ans");
+  a.style.maxHeight = open ? a.scrollHeight+"px" : 0;
+});
+
+// Animaciones al aparecer
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add(e.target.id==="timeline"?"go":"in"); io.unobserve(e.target);} }),{threshold:.15});
+document.querySelectorAll(".rv,#timeline").forEach(el=>io.observe(el));
+
+// Barra inferior en celular
+const hero=$(".hero");
+new IntersectionObserver(([e])=>$("#mbar").classList.toggle("on",!e.isIntersecting)).observe(hero);
+</script>
+</body>
+</html>
