@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Tilín FL · Antipulgas para perros</title>
-<meta name="description" content="Una sola tableta masticable protege a tu perro 3 meses contra pulgas, garrapatas y ácaros. Con silimarina. Desde S/35.">
+<title>Tilín FL · Antipulgas para perros | Pet Huellas</title>
+<meta name="description" content="Una sola tableta masticable protege a tu perro 3 meses contra pulgas, garrapatas y ácaros. Desde S/35, y por mayor desde S/25 (6 unidades). Envíos a todo el Perú.">
 <meta name="theme-color" content="#7B1E6C">
 <meta property="og:title" content="Tilín FL · 1 tableta = 3 meses de protección">
-<meta property="og:description" content="Antipulgas, garrapatas y ácaros en tableta masticable. Desde S/35.">
+<meta property="og:description" content="Antipulgas en tableta masticable. Desde S/35 · Por mayor desde S/25 · Envíos a todo el Perú · Pet Huellas.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://tilinfl.github.io/img/flyer.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -260,6 +260,104 @@ footer .logo{justify-content:center;margin-bottom:10px}
 .toast{position:fixed;left:50%;bottom:100px;transform:translate(-50%,30px);background:var(--ink);color:#fff;font-weight:700;padding:12px 20px;border-radius:99px;opacity:0;transition:.35s;z-index:95;white-space:nowrap}
 .toast.on{opacity:1;transform:translate(-50%,0)}
 
+/* Tienda en el logo y aviso por mayor */
+.logo small{font-family:Nunito;font-weight:800;font-size:.72rem;color:var(--muted);letter-spacing:0;align-self:flex-end;margin-bottom:7px}
+.mayor-link{display:inline-flex;align-items:center;gap:8px;background:#FFF4D1;color:#7A5200;font-weight:800;font-size:.92rem;padding:9px 14px;border-radius:14px;margin-bottom:22px;transition:transform .2s}
+.mayor-link:hover{transform:translateX(4px)}
+.mayor-link b{color:var(--plum)}
+.prod .mayor-chip{display:block;background:#FFF4D1;border-radius:12px;padding:8px 10px;font-weight:800;font-size:.85rem;color:#7A5200;margin:0 0 14px}
+.prod .mayor-chip b{color:var(--plum)}
+.rec .mayor-note{font-size:.85rem;font-weight:800;color:#7A5200;background:#FFF4D1;border-radius:10px;padding:6px 10px;display:inline-block;margin-bottom:12px}
+.addon{display:flex;align-items:center;gap:10px;text-align:left;border:2px dashed var(--pink);border-radius:16px;padding:10px 12px;margin-bottom:14px;cursor:pointer;font-size:.88rem;font-weight:700;line-height:1.3;transition:.2s}
+.addon.on{border-style:solid;border-color:var(--magenta);background:#FCEAF5}
+.addon input{width:20px;height:20px;accent-color:var(--magenta);flex:none}
+.addon img{width:52px;border-radius:6px;flex:none}
+.addon b{color:var(--plum)}
+
+/* Por mayor */
+.tag.gold{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.mayor{background:var(--ink);color:#fff;border-radius:36px;padding:48px;position:relative;overflow:hidden}
+.mayor::before{content:"";position:absolute;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(255,201,60,.22),transparent 65%);top:-170px;right:-130px;pointer-events:none}
+.mayor-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:start;position:relative}
+.mayor h2{font-size:clamp(2rem,4vw,3rem);margin:14px 0 10px}
+.mayor h2 .hl{background:var(--gold);color:var(--ink);white-space:nowrap}
+.mayor .sub{color:#E3CFDF;font-size:1.05rem;margin-bottom:22px}
+.m-row{display:grid;grid-template-columns:54px 1fr auto;gap:14px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:12px 14px;margin-bottom:10px}
+.m-row .crop{width:54px;border-radius:6px}
+.m-row b.nm{font-family:"Baloo 2";font-size:1.1rem;display:block;line-height:1.15}
+.m-row b.nm small{font-size:1em}
+.m-row b.nm small i{font-style:normal}
+.m-row .pr{font-size:.9rem;color:#E3CFDF;font-weight:700}
+.m-row .pr s{opacity:.7}
+.m-row .pr strong{color:var(--gold);font-size:1.08rem}
+.qty.dark{background:rgba(255,255,255,.12)}
+.qty b{min-width:20px;text-align:center}
+.presets{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.presets button{border:1.5px solid rgba(255,255,255,.25);border-radius:99px;padding:7px 14px;font-weight:800;font-size:.85rem;color:#fff;transition:.2s}
+.presets button:hover{border-color:var(--gold);color:var(--gold)}
+.m-who{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px;color:#E3CFDF;font-weight:700;font-size:.85rem}
+.m-who span{background:rgba(255,255,255,.08);border-radius:99px;padding:6px 12px}
+.m-sum{background:#fff;color:var(--ink);border-radius:26px;padding:24px}
+.m-sum h3{font-size:1.4rem;color:var(--plum);margin-bottom:10px}
+.m-line{display:flex;justify-content:space-between;font-weight:700;padding:5px 0;color:var(--muted)}
+.m-line.big{font-family:"Baloo 2";font-size:1.7rem;color:var(--plum);font-weight:800;border-top:2px dashed var(--cream-2);margin-top:6px;padding-top:10px;line-height:1.2}
+.m-save{background:#E8F8EE;color:#11713A;font-weight:800;border-radius:14px;padding:10px 12px;margin:10px 0 14px;font-size:.93rem;line-height:1.35}
+.m-save.off{background:#FFF4D1;color:#7A5200}
+.bar6{height:10px;background:rgba(110,26,97,.12);border-radius:99px;overflow:hidden;margin-top:8px}
+.bar6 i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--green));border-radius:99px;transition:width .4s}
+.m-sum .btn{width:100%}
+.m-sum .btn+.btn{margin-top:10px}
+.share-link{display:block;width:100%;text-align:center;margin-top:12px;font-weight:800;color:var(--plum);font-size:.92rem;text-decoration:underline}
+
+/* Paravetol */
+.pv{display:grid;grid-template-columns:.95fr 1.05fr;gap:44px;align-items:center}
+.pv-art{position:relative}
+.pv-art img{border-radius:28px;box-shadow:var(--shadow);width:100%;height:auto}
+.pv-art .price-badge{top:-22px;right:-8px}
+.pv-art .price-badge small{font-size:.72rem}
+.pv h2{font-size:clamp(2rem,4.2vw,3rem);margin:14px 0 12px}
+.pv p.lead{color:var(--muted);font-size:1.08rem;margin-bottom:18px}
+.pv-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+.pv-facts div{background:#fff;border:2px solid var(--pink);border-radius:16px;padding:12px;font-weight:800;font-size:.9rem;color:var(--plum);line-height:1.25}
+.pv-facts div span{display:block;font-size:1.5rem;margin-bottom:4px}
+.pv-facts small{display:block;color:var(--muted);font-weight:700;margin-top:2px}
+.pv-calc{background:#fff;border-radius:22px;padding:18px 20px;box-shadow:var(--shadow)}
+.pv-calc .lbl{font-weight:800;display:flex;justify-content:space-between;align-items:baseline}
+.pv-calc .lbl b{font-family:"Baloo 2";font-size:1.6rem;color:var(--plum)}
+.pv-calc input[type=range]{background:linear-gradient(90deg,var(--magenta) var(--p,20%),var(--cream-2) var(--p,20%));margin:12px 0 12px}
+.pv-out{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.pv-out p{font-weight:700;color:var(--muted);line-height:1.35}
+.pv-out p b{color:var(--ink)}
+.pv-comp{font-size:.82rem;color:var(--muted);margin-top:14px}
+
+/* Recordatorio, redes y pie */
+.remind{text-align:center;margin-top:38px}
+.remind small{display:block;color:var(--muted);font-weight:700;margin-top:10px}
+.social{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:900px;margin:0 auto}
+.soc{display:flex;align-items:center;gap:14px;background:#fff;border-radius:22px;padding:18px 20px;box-shadow:var(--shadow);font-weight:800;transition:transform .25s;line-height:1.25}
+.soc:hover{transform:translateY(-5px)}
+.soc .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;flex:none}
+.soc.ig .ic{background:linear-gradient(45deg,#F9CE34,#EE2A7B 50%,#6228D7)}
+.soc.fb .ic{background:#1877F2}
+.soc.wa .ic{background:#25D366}
+.soc small{display:block;color:var(--muted);font-weight:700}
+footer .store{font-family:"Baloo 2";font-weight:800;font-size:1.25rem;color:var(--plum);margin-bottom:4px}
+footer .f-links{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;font-weight:800;color:var(--plum);margin:12px 0}
+footer .f-links a:hover{text-decoration:underline}
+
+/* Carrito: extras */
+.item img.th{width:60px;border-radius:8px}
+.item small s{opacity:.7}
+.upsell{display:grid;grid-template-columns:54px 1fr auto;gap:12px;align-items:center;border:2px dashed var(--pink);border-radius:18px;padding:10px 12px;font-size:.88rem;font-weight:700;line-height:1.3}
+.upsell img{width:54px;border-radius:8px}
+.upsell b{color:var(--plum)}
+.upsell button{background:var(--plum);color:#fff;font-weight:800;border-radius:99px;padding:8px 14px;font-size:.85rem;white-space:nowrap}
+.tot s{font-size:.62em;color:var(--muted);font-weight:700;margin-right:8px}
+.tip{line-height:1.35}
+.tip.ok{background:#E8F8EE;color:#11713A}
+.tip button{display:block;width:100%;margin-top:8px;background:var(--plum);color:#fff;font-weight:800;border-radius:99px;padding:9px;font-size:.88rem}
+.mbar .from small{display:block;font-size:.72rem;color:#7A5200;font-weight:800}
+
 /* Animación al hacer scroll */
 .rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
 .rv.in{opacity:1;transform:none}
@@ -293,6 +391,22 @@ footer .logo{justify-content:center;margin-bottom:10px}
   .row>div{padding:12px 10px;font-size:.88rem}
   .final{padding:36px 22px;border-radius:30px;text-align:center}
   .final .boxes{order:-1}
+  .logo{font-size:1.4rem}
+  .logo small{font-size:.66rem;margin-bottom:5px}
+  .mayor-grid,.pv{grid-template-columns:1fr}
+  .mayor{padding:28px 18px;border-radius:28px}
+  .m-row{grid-template-columns:44px 1fr auto;gap:10px;padding:10px}
+  .m-row .crop{width:44px}
+  .m-row b.nm small{display:block;font-family:Nunito;font-size:.78rem;font-weight:700;color:#E3CFDF}
+  .m-row b.nm small i{display:none}
+  .m-row .pr{font-size:.85rem}
+  .pv{gap:34px}
+  .pv-art{max-width:440px;margin:0 auto;width:100%}
+  .pv-art .price-badge{top:-18px;right:-4px}
+  .pv-facts{gap:8px}
+  .pv-facts div{padding:10px 8px;font-size:.8rem}
+  .pv-out .btn{width:100%}
+  .social{grid-template-columns:1fr;max-width:420px}
   .wa-float{bottom:90px;width:54px;height:54px}
   .wa-chat{right:16px;bottom:156px}
   .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;padding:12px 16px calc(12px + env(safe-area-inset-bottom));gap:12px;align-items:center;box-shadow:0 -10px 30px -10px rgba(110,26,97,.35);transform:translateY(110%);transition:transform .35s}
@@ -307,15 +421,15 @@ footer .logo{justify-content:center;margin-bottom:10px}
 <body>
 
 <div class="topbar"><div class="track" aria-hidden="true">
-  <span>🐾 1 tableta = 3 meses de protección</span><span>💬 Pide fácil por WhatsApp</span><span>🍖 Tableta masticable, sin pipetas ni collares</span><span>🌿 Con silimarina, protector hepático</span>
-  <span>🐾 1 tableta = 3 meses de protección</span><span>💬 Pide fácil por WhatsApp</span><span>🍖 Tableta masticable, sin pipetas ni collares</span><span>🌿 Con silimarina, protector hepático</span>
+  <span>🐾 1 tableta = 3 meses de protección</span><span>🚚 Envíos a todo el Perú</span><span>📦 Por mayor desde 6 unidades: desde S/25</span><span>💬 Pide fácil por WhatsApp</span><span>🌿 Con silimarina, protector hepático</span>
+  <span>🐾 1 tableta = 3 meses de protección</span><span>🚚 Envíos a todo el Perú</span><span>📦 Por mayor desde 6 unidades: desde S/25</span><span>💬 Pide fácil por WhatsApp</span><span>🌿 Con silimarina, protector hepático</span>
 </div></div>
 
 <nav>
   <div class="wrap">
-    <a href="#" class="logo">TILÍN <span>FL</span></a>
+    <a href="#" class="logo">TILÍN <span>FL</span><small>por Pet Huellas</small></a>
     <div class="links">
-      <a href="#senales">¿Lo necesita?</a><a href="#elige">Elige su tableta</a><a href="#como">Cómo funciona</a><a href="#faq">Preguntas</a>
+      <a href="#elige">Elige su tableta</a><a href="#mayor">Por mayor</a><a href="#paravetol">Desparasitante</a><a href="#como">Cómo funciona</a><a href="#faq">Preguntas</a>
     </div>
     <button class="cart-btn" id="cartBtn" aria-label="Abrir carrito">🛒 <span class="count" id="cartCount">0</span></button>
   </div>
@@ -333,8 +447,9 @@ footer .logo{justify-content:center;margin-bottom:10px}
         <a href="#elige" class="btn btn-main pulse">Elegir su tableta →</a>
         <a href="#senales" class="btn btn-ghost">¿Mi perro lo necesita?</a>
       </div>
+      <a href="#mayor" class="mayor-link rv d3">📦 ¿Llevas 6 o más? <b>Precio por mayor desde S/25</b> →</a>
       <div class="trust rv d3">
-        <div>✅ Elimina y previene</div><div>🌿 Con silimarina</div><div>🍖 Masticable</div>
+        <div>✅ Elimina y previene</div><div>🌿 Con silimarina</div><div>🚚 Envíos a todo el Perú</div>
       </div>
     </div>
     <div class="hero-art rv">
@@ -404,6 +519,12 @@ footer .logo{justify-content:center;margin-bottom:10px}
           <h3 id="recName">Tilín FL 4.5 a 10 kg</h3>
           <div class="price">S/<span id="recPrice">35</span></div>
           <div class="per" id="recPer">≈ S/0.39 al día de protección</div>
+          <a href="#mayor" class="mayor-note" id="recMayor">📦 Llevando 6 o más: S/25 c/u</a>
+          <label class="addon" id="addon">
+            <input type="checkbox" id="addonPv">
+            <img src="img/paravetol.jpg" alt="Paravetol Plus" loading="lazy">
+            <span>Súmale el desparasitante interno <b>Paravetol Plus</b><br><span id="addonTxt">1 tableta · + S/5</span></span>
+          </label>
           <button class="btn btn-main" style="width:100%" id="recAdd">Agregar al carrito 🛒</button>
         </div>
       </div>
@@ -420,6 +541,69 @@ footer .logo{justify-content:center;margin-bottom:10px}
       <p>Cada caja trae 1 tableta masticable que protege por 3 meses.</p>
     </div>
     <div class="products" id="products"></div>
+  </div>
+</section>
+
+<!-- POR MAYOR -->
+<section id="mayor" style="padding-top:20px">
+  <div class="wrap">
+    <div class="mayor rv">
+      <div class="mayor-grid">
+        <div>
+          <span class="tag gold">📦 Oferta por mayor</span>
+          <h2>Desde 6 unidades, <span class="hl">precio especial</span></h2>
+          <p class="sub">Arma tu pedido y mira cuánto ahorras. Puedes combinar los tres tamaños.</p>
+          <div id="mRows"></div>
+          <div class="presets">
+            <button data-preset="2,2,2">Surtido de 6</button>
+            <button data-preset="4,4,4">Surtido de 12</button>
+            <button data-preset="8,8,8">Surtido de 24</button>
+            <button data-preset="0,0,0">Vaciar</button>
+          </div>
+          <div class="m-who"><span>🏥 Veterinarias</span><span>🛍️ Pet shops</span><span>🐕 Criadores y albergues</span><span>👨‍👩‍👧 Familia y vecinos</span></div>
+        </div>
+        <div class="m-sum">
+          <h3>Tu pedido por mayor</h3>
+          <div class="m-line"><span id="mUnits">6 unidades</span><span>Precio normal: <s id="mNormal">S/240</s></span></div>
+          <div class="m-line big"><span>Pagas</span><span id="mTotal">S/165</span></div>
+          <div class="m-save" id="mSave"></div>
+          <button class="btn btn-main" id="mAdd">Agregar al carrito 🛒</button>
+          <button class="btn btn-wa" id="mWa">💬 Pedirlo ya por WhatsApp</button>
+          <button class="share-link" id="share">¿No llegas a 6? Júntate con amigos: compartir →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARAVETOL -->
+<section id="paravetol">
+  <div class="wrap">
+    <div class="pv">
+      <div class="pv-art rv">
+        <img src="img/paravetol.jpg" alt="Caja y blíster de Paravetol Plus" loading="lazy" width="636" height="452">
+        <div class="price-badge"><div><strong>S/5</strong><small>por tableta</small></div></div>
+      </div>
+      <div class="rv d1">
+        <span class="tag">🛡️ Protección completa: por fuera y por dentro</span>
+        <h2>Paravetol Plus: chau <span class="hl">parásitos internos</span></h2>
+        <p class="lead">Tilín FL lo cuida de pulgas y garrapatas. Paravetol Plus se encarga de los de adentro: lombrices (nemátodos), tenias (céstodos) y giardia. Para perros y gatos.</p>
+        <div class="pv-facts">
+          <div><span>💊</span>1 tableta<small>por cada 10 kg</small></div>
+          <div><span>🐶🐱</span>Perros y gatos<small>desde 4 semanas</small></div>
+          <div><span>🔁</span>Cada 3 meses<small>igual que Tilín FL</small></div>
+        </div>
+        <div class="pv-calc">
+          <div class="lbl"><span>¿Cuánto pesa tu mascota?</span><b id="pvKg">8 kg</b></div>
+          <input type="range" id="pvRange" min="1" max="40" step="1" value="8" aria-label="Peso de la mascota en kilos">
+          <div class="pv-out">
+            <p id="pvTabs"></p>
+            <button class="btn btn-main" id="pvAdd">Agregar 🛒</button>
+          </div>
+        </div>
+        <p class="pv-comp">Pamoato de Pirantel 100 mg · Fenbendazol 450 mg · Praziquantel 50 mg (Veterline). Producto de uso veterinario: confirma la dosis con tu veterinario.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -453,6 +637,10 @@ footer .logo{justify-content:center;margin-bottom:10px}
       <div class="step"><div class="dot">🐶</div><div><h3>Mes 2</h3><p>Sigue protegido, aunque se bañe o salga.</p></div></div>
       <div class="step"><div class="dot">🔁</div><div><h3>Mes 3</h3><p>Le toca su siguiente tableta.</p></div></div>
     </div>
+    <div class="remind rv">
+      <a class="btn btn-ghost" id="remind" href="#" target="_blank" rel="noopener">📅 Recuérdamelo en 3 meses</a>
+      <small id="remindTxt">Se guarda en tu Google Calendar, gratis.</small>
+    </div>
   </div>
 </section>
 
@@ -485,7 +673,10 @@ footer .logo{justify-content:center;margin-bottom:10px}
       <div class="qa rv"><button>¿Se la puedo dar con comida? <i>+</i></button><div class="ans"><p>Es masticable y la mayoría de perros la come sola como premio. Si no, puedes ofrecerla junto a su comida.</p></div></div>
       <div class="qa rv"><button>¿Puedo bañarlo normalmente? <i>+</i></button><div class="ans"><p>Sí. Como actúa desde adentro, el baño no le quita la protección como pasa con productos que se aplican en la piel.</p></div></div>
       <div class="qa rv"><button>¿Sirve para cachorros o perras preñadas? <i>+</i></button><div class="ans"><p>Es de uso veterinario. Para cachorros pequeños, perras preñadas o perros con alguna enfermedad, consulta antes con tu veterinario.</p></div></div>
-      <div class="qa rv"><button>¿Cómo hago mi pedido? <i>+</i></button><div class="ans"><p>Agrega tus cajas al carrito y toca "Pedir por WhatsApp". Te llega el pedido listo y coordinamos la entrega y el pago.</p></div></div>
+      <div class="qa rv"><button>¿Cómo funciona el precio por mayor? <i>+</i></button><div class="ans"><p>Desde 6 unidades de Tilín FL pagas S/25, S/27.50 o S/30 por caja según el tamaño. Puedes combinar tamaños y el carrito aplica el descuento solo.</p></div></div>
+      <div class="qa rv"><button>¿Hacen envíos a provincia? <i>+</i></button><div class="ans"><p>Sí, Pet Huellas envía a todo el Perú. El costo y el tiempo de envío se coordinan por WhatsApp según tu ciudad.</p></div></div>
+      <div class="qa rv"><button>¿Paravetol Plus sirve para gatos? <i>+</i></button><div class="ans"><p>Sí, es para perros y gatos desde las 4 semanas de edad: 1 tableta por cada 10 kg de peso, cada 3 meses. Tilín FL, en cambio, es solo para perros.</p></div></div>
+      <div class="qa rv"><button>¿Cómo hago mi pedido? <i>+</i></button><div class="ans"><p>Agrega tus productos al carrito y toca "Pedir por WhatsApp". Te llega el pedido listo y coordinamos la entrega y el pago.</p></div></div>
     </div>
   </div>
 </section>
@@ -497,7 +688,7 @@ footer .logo{justify-content:center;margin-bottom:10px}
       <div>
         <span class="script">Protege hoy, su mañana ♡</span>
         <h2>Tu perro no puede pedírtelo. Tú sí puedes dárselo.</h2>
-        <p>Desde S/35 por 3 meses de protección. Menos de lo que cuesta un baño.</p>
+        <p>Desde S/35 por 3 meses de protección, y desde S/25 si llevas 6 o más. Envíos a todo el Perú.</p>
         <a href="#elige" class="btn btn-main" style="background:#fff;color:var(--plum)">Elegir su tableta →</a>
       </div>
       <div class="boxes" id="finalBoxes"></div>
@@ -505,9 +696,37 @@ footer .logo{justify-content:center;margin-bottom:10px}
   </div>
 </section>
 
+<!-- REDES -->
+<section id="redes" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">🐾 Pet Huellas</span>
+      <h2>Síguenos y entérate de las <span class="hl">promos</span></h2>
+      <p>Novedades, ofertas y consejos para tu mascota en nuestras redes.</p>
+    </div>
+    <div class="social">
+      <a class="soc ig rv" id="socIg" href="#" target="_blank" rel="noopener">
+        <span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="#fff" stroke="none"/></svg></span>
+        <span>Instagram<small>@pet_huellas4</small></span>
+      </a>
+      <a class="soc fb rv d1" id="socFb" href="#" target="_blank" rel="noopener">
+        <span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.9.3-1.5 1.6-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.400H8.2v3h2.5V21z"/></svg></span>
+        <span>Facebook<small>Pet Huellas</small></span>
+      </a>
+      <a class="soc wa rv d2" id="socWa" href="#" target="_blank" rel="noopener">
+        <span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg></span>
+        <span>WhatsApp<small>932 595 200</small></span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="logo">TILÍN <span>FL</span></div>
-  <p>Para perros de todas las razas y tamaños · Uso veterinario. Lee las indicaciones del empaque.</p>
+  <div class="store">🐾 Pet Huellas</div>
+  <p>Envíos a todo el Perú · WhatsApp 932 595 200</p>
+  <div class="f-links"><a id="fIg" href="#" target="_blank" rel="noopener">Instagram</a><a id="fFb" href="#" target="_blank" rel="noopener">Facebook</a><a href="#mayor">Precio por mayor</a><a href="#faq">Preguntas</a></div>
+  <p>Productos de uso veterinario. Lee las indicaciones del empaque y consulta a tu veterinario.</p>
 </footer>
 
 <!-- Carrito -->
@@ -518,13 +737,13 @@ footer .logo{justify-content:center;margin-bottom:10px}
   <footer>
     <div class="tip" id="tip"></div>
     <div class="tot"><span>Total</span><span id="total">S/0</span></div>
-    <p style="color:var(--muted);font-size:.85rem;margin-bottom:14px">Coordinamos entrega y pago por WhatsApp.</p>
+    <p style="color:var(--muted);font-size:.85rem;margin-bottom:14px">🚚 Envíos a todo el Perú. Coordinamos entrega y pago por WhatsApp.</p>
     <button class="btn btn-wa" id="checkout">💬 Pedir por WhatsApp</button>
   </footer>
 </aside>
 
 <div class="wa-chat" id="waChat" role="dialog" aria-label="Chat de WhatsApp">
-  <div class="hd"><div class="av">🐶</div><div><b>Tilín FL</b><small>En línea · responde al toque</small></div><button class="x" id="waClose" aria-label="Cerrar">×</button></div>
+  <div class="hd"><div class="av">🐶</div><div><b>Pet Huellas · Tilín FL</b><small>En línea · responde al toque</small></div><button class="x" id="waClose" aria-label="Cerrar">×</button></div>
   <div class="bd" id="waBody"></div>
   <div class="opts" id="waOpts"></div>
 </div>
@@ -533,7 +752,7 @@ footer .logo{justify-content:center;margin-bottom:10px}
 </a>
 
 <div class="mbar" id="mbar">
-  <div class="from">desde<b>S/35</b></div>
+  <div class="from">desde<b>S/35</b><small>x mayor S/25</small></div>
   <a href="#elige" class="btn btn-main" id="mbarBtn">Elegir su tableta</a>
 </div>
 
@@ -541,17 +760,27 @@ footer .logo{justify-content:center;margin-bottom:10px}
 
 <script>
 /* ====== CONFIGURA AQUÍ ====== */
-const WHATSAPP = "51932595200"; // +51 932 595 200
+const WHATSAPP  = "51932595200"; // +51 932 595 200
+const INSTAGRAM = "https://www.instagram.com/pet_huellas4";
+const FACEBOOK  = "https://www.facebook.com/share/1M69pPNDc6/?mibextid=wwXIfr";
+const SITE      = "https://tilinfl.github.io/";
+const MAYOR_MIN = 6; // cajas de Tilín FL (sumando los tamaños) para activar el precio por mayor
 const PRODUCTS = [
-  { id:"s", name:"Tilín FL 4.5 a 10 kg", kg:"4.5 a 10 kg", min:4.5, max:10, price:35, color:"c-blue",  crop:{x:62, y:944, w:176, h:340}, dog:"Pequeño" },
-  { id:"m", name:"Tilín FL 10 a 20 kg",  kg:"10 a 20 kg",  min:10,  max:20, price:40, color:"c-pink",  crop:{x:255,y:944, w:177, h:340}, dog:"Mediano", pop:true },
-  { id:"l", name:"Tilín FL 20 a 40 kg",  kg:"20 a 40 kg",  min:20,  max:40, price:45, color:"c-green", crop:{x:450,y:944, w:178, h:340}, dog:"Grande" },
+  { id:"s", name:"Tilín FL 4.5 a 10 kg", kg:"4.5 a 10 kg", price:35, mayor:25,   color:"c-blue",  crop:{x:62, y:944, w:176, h:340}, dog:"Pequeño" },
+  { id:"m", name:"Tilín FL 10 a 20 kg",  kg:"10 a 20 kg",  price:40, mayor:27.5, color:"c-pink",  crop:{x:255,y:944, w:177, h:340}, dog:"Mediano", pop:true },
+  { id:"l", name:"Tilín FL 20 a 40 kg",  kg:"20 a 40 kg",  price:45, mayor:30,   color:"c-green", crop:{x:450,y:944, w:178, h:340}, dog:"Grande" },
 ];
+const PARAVETOL = { id:"pv", name:"Paravetol Plus (tableta)", price:5, img:"img/paravetol.jpg" };
 /* ============================ */
 
 const $ = s => document.querySelector(s);
+const money = n => "S/" + (Number.isInteger(n) ? n : n.toFixed(2));
+const ALL = [...PRODUCTS, PARAVETOL];
+const byId = id => ALL.find(p=>p.id===id);
 const cropHTML = (p, extra="") => `<div class="crop ${extra}" style="--x:${p.crop.x};--y:${p.crop.y};--w:${p.crop.w};--h:${p.crop.h}"><img src="img/flyer.jpg" alt="Caja ${p.name}" loading="lazy"></div>`;
+const thumb = p => p.crop ? cropHTML(p) : `<img class="th" src="${p.img}" alt="${p.name}" loading="lazy">`;
 const perDay = p => (p.price/90).toFixed(2);
+const wa = txt => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(txt)}`;
 
 // Productos
 $("#products").innerHTML = PRODUCTS.map((p,i)=>`
@@ -561,56 +790,138 @@ $("#products").innerHTML = PRODUCTS.map((p,i)=>`
     <span class="kg">🐕 ${p.dog} · ${p.kg}</span>
     <div class="price"><small>S/</small>${p.price}</div>
     <div class="per">≈ S/${perDay(p)} al día · 3 meses</div>
+    <a href="#mayor" class="mayor-chip">📦 Llevando ${MAYOR_MIN} o más: <b>${money(p.mayor)} c/u</b></a>
     <button class="btn btn-main" data-add="${p.id}">Agregar al carrito</button>
   </div>`).join("");
 $("#finalBoxes").innerHTML = PRODUCTS.map(p=>cropHTML(p)).join("");
 
+// Precios: desde MAYOR_MIN cajas de Tilín FL (combinando tamaños) todas pasan a precio por mayor
+function calc(c){
+  const ids=Object.keys(c).filter(k=>c[k]>0 && byId(k));
+  const tilin=PRODUCTS.reduce((a,p)=>a+(c[p.id]||0),0);
+  const mayor=tilin>=MAYOR_MIN;
+  const unit=p=>(p.mayor && mayor) ? p.mayor : p.price;
+  const total=ids.reduce((a,k)=>a+c[k]*unit(byId(k)),0);
+  const normal=ids.reduce((a,k)=>a+c[k]*byId(k).price,0);
+  return {ids, tilin, mayor, unit, total, normal, ahorro:normal-total, n:ids.reduce((a,k)=>a+c[k],0)};
+}
+function orderText(c){
+  const r=calc(c);
+  const lines=r.ids.map(k=>{ const p=byId(k), u=r.unit(p);
+    return `• ${c[k]} x ${p.name} — ${money(c[k]*u)}${p.mayor && r.mayor ? ` (${money(u)} c/u por mayor)` : ""}`; }).join("\n");
+  const extra = r.mayor ? `\n✅ Precio por mayor (ahorro ${money(r.ahorro)})` : "";
+  const peso = (!r.mayor && r.tilin) ? `\nMi perro pesa aprox: ${$("#range").value} kg` : "";
+  return `Hola Pet Huellas 👋 Quiero hacer este pedido:\n\n${lines}\n\n*Total: ${money(r.total)}*${extra}\n${peso}\nCiudad / distrito de envío: `;
+}
+
 // Carrito
 let cart = {};
 try { cart = JSON.parse(localStorage.getItem("tilinCart")) || {}; } catch(e){}
+Object.keys(cart).forEach(k=>{ if(!byId(k) || !(cart[k]>0)) delete cart[k]; });
 const save = () => { try { localStorage.setItem("tilinCart", JSON.stringify(cart)); } catch(e){} };
-const byId = id => PRODUCTS.find(p=>p.id===id);
 
 function toast(msg){ const t=$("#toast"); t.textContent=msg; t.classList.add("on"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("on"),2200); }
-function add(id){
-  cart[id]=(cart[id]||0)+1; save(); render();
+function add(id, q=1, quiet){
+  cart[id]=(cart[id]||0)+q; save(); render();
+  if(quiet) return;
   const b=$("#cartBtn"); b.classList.remove("bump"); void b.offsetWidth; b.classList.add("bump");
-  toast("✅ "+byId(id).name+" agregado"); openCart();
+  toast(`✅ ${q>1 ? q+" × " : ""}${byId(id).name} agregado`); openCart();
 }
+// La caja que más lleva el cliente: con esa se completa el pedido por mayor
+const topTilin = () => PRODUCTS.filter(p=>cart[p.id]).sort((a,b)=>cart[b.id]-cart[a.id])[0];
 function render(){
-  const ids=Object.keys(cart).filter(k=>cart[k]>0);
-  const n=ids.reduce((a,k)=>a+cart[k],0);
-  const total=ids.reduce((a,k)=>a+cart[k]*byId(k).price,0);
-  $("#cartCount").textContent=n;
-  $("#total").textContent="S/"+total;
-  $("#items").innerHTML = ids.length ? ids.map(k=>{const p=byId(k);return `
-    <div class="item">${cropHTML(p)}<div><h4>${p.name}</h4><small>S/${p.price} c/u · ${cart[k]*3} meses</small></div>
-    <div class="qty"><button data-dec="${k}">−</button><b>${cart[k]}</b><button data-inc="${k}">+</button></div></div>`}).join("")
-    : `<div class="empty"><div>🐶</div><p>Tu carrito está vacío.<br>Elige la tableta según el peso de tu perro.</p></div>`;
+  const r=calc(cart);
+  $("#cartCount").textContent=r.n;
+  $("#total").innerHTML=(r.mayor ? `<s>${money(r.normal)}</s>` : "")+money(r.total);
+  let html = r.ids.map(k=>{ const p=byId(k), u=r.unit(p);
+    const sub = !p.crop ? `${money(u)} c/u · 1 por cada 10 kg`
+      : r.mayor ? `<s>${money(p.price)}</s> <b style="color:#11713A">${money(u)} c/u</b>`
+      : `${money(u)} c/u · ${cart[k]*3} meses`;
+    return `
+    <div class="item">${thumb(p)}<div><h4>${p.name}</h4><small>${sub}</small></div>
+    <div class="qty"><button data-dec="${k}" aria-label="Quitar uno">−</button><b>${cart[k]}</b><button data-inc="${k}" aria-label="Agregar uno">+</button></div></div>`; }).join("");
+  if(!r.ids.length) html=`<div class="empty"><div>🐶</div><p>Tu carrito está vacío.<br>Elige la tableta según el peso de tu perro.</p></div>`;
+  else if(!cart.pv) html+=`
+    <div class="upsell"><img src="${PARAVETOL.img}" alt="Paravetol Plus" loading="lazy">
+    <div>Súmale el desparasitante<br><b>Paravetol Plus · ${money(PARAVETOL.price)}</b></div>
+    <button data-add="pv">+ Agregar</button></div>`;
+  $("#items").innerHTML=html;
+
   const tip=$("#tip");
-  if(n===1){ tip.style.display="block"; tip.textContent="💡 Tip: lleva 2 y tu perro queda protegido 6 meses sin volver a pedir."; }
-  else if(n>=2){ tip.style.display="block"; tip.textContent=`🎉 ¡Genial! Tu pedido cubre ${n*3} meses de protección.`; }
-  else tip.style.display="none";
-  $("#checkout").disabled=!n; $("#checkout").style.opacity=n?1:.5;
+  if(!r.tilin){ tip.style.display="none"; }
+  else if(r.mayor){
+    tip.style.display="block"; tip.className="tip ok";
+    tip.innerHTML=`🎉 <b>¡Precio por mayor activado!</b> Ahorras ${money(r.ahorro)} en este pedido.`;
+  } else {
+    const f=MAYOR_MIN-r.tilin, top=topTilin();
+    const hyp=calc({...cart, [top.id]:cart[top.id]+f});
+    const msg = hyp.total<=r.total
+      ? `Con ${f} más pagas <b>menos</b>: ${money(hyp.total)} en vez de ${money(r.total)}.`
+      : `Agrega ${f} más y todas bajan a precio por mayor: ahorras ${money(hyp.ahorro)}.`;
+    tip.style.display="block"; tip.className="tip";
+    tip.innerHTML=`📦 Llevas ${r.tilin} de ${MAYOR_MIN} cajas. ${msg}<div class="bar6"><i style="width:${r.tilin/MAYOR_MIN*100}%"></i></div><button data-fill>Completar las ${MAYOR_MIN} (+${f})</button>`;
+  }
+  $("#checkout").disabled=!r.n; $("#checkout").style.opacity=r.n?1:.5;
 }
-function openCart(){ $("#drawer").classList.add("on"); $("#overlay").classList.add("on"); }
+function openCart(){ $("#drawer").classList.add("on"); $("#overlay").classList.add("on"); hideChat(); }
 function closeCart(){ $("#drawer").classList.remove("on"); $("#overlay").classList.remove("on"); }
-document.addEventListener("click",e=>{
-  const a=e.target.closest("[data-add]"); if(a) return add(a.dataset.add);
-  const i=e.target.closest("[data-inc]"); if(i){cart[i.dataset.inc]++;save();return render();}
-  const d=e.target.closest("[data-dec]"); if(d){cart[d.dataset.dec]--;if(cart[d.dataset.dec]<=0)delete cart[d.dataset.dec];save();return render();}
-});
 $("#cartBtn").onclick=openCart; $("#closeCart").onclick=closeCart; $("#overlay").onclick=closeCart;
-const wa = txt => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(txt)}`;
-$("#waFloat").href = wa("¡Hola Tilín FL! 👋🐶 Quiero proteger a mi perro y tengo una consulta.");
+$("#checkout").onclick=()=>{ if(calc(cart).n) window.open(wa(orderText(cart)),"_blank"); };
+
+// Armador de pedido por mayor
+let pack={s:2,m:2,l:2};
+$("#mRows").innerHTML = PRODUCTS.map(p=>`
+  <div class="m-row">${cropHTML(p)}
+    <div><b class="nm">${p.dog} <small><i>· </i>${p.kg}</small></b><span class="pr"><s>${money(p.price)}</s> → <strong>${money(p.mayor)}</strong> c/u</span></div>
+    <div class="qty dark"><button data-pdec="${p.id}" aria-label="Quitar uno">−</button><b id="pq-${p.id}">0</b><button data-pinc="${p.id}" aria-label="Agregar uno">+</button></div>
+  </div>`).join("");
+function renderPack(){
+  const r=calc(pack);
+  PRODUCTS.forEach(p=>$("#pq-"+p.id).textContent=pack[p.id]);
+  $("#mUnits").textContent=r.tilin+(r.tilin===1 ? " unidad" : " unidades");
+  $("#mNormal").textContent=money(r.normal);
+  $("#mNormal").parentElement.style.visibility=r.mayor ? "visible" : "hidden";
+  $("#mTotal").textContent=money(r.total);
+  const s=$("#mSave");
+  if(r.mayor){ s.className="m-save"; s.innerHTML=`✅ Ahorras <b>${money(r.ahorro)}</b>. Si revendes al precio normal, esa es tu ganancia.`; }
+  else { s.className="m-save off"; s.innerHTML=`Te faltan <b>${MAYOR_MIN-r.tilin}</b> para el precio por mayor.<div class="bar6"><i style="width:${r.tilin/MAYOR_MIN*100}%"></i></div>`; }
+  ["#mAdd","#mWa"].forEach(q=>{ $(q).disabled=!r.tilin; $(q).style.opacity=r.tilin?1:.5; });
+}
+renderPack();
+$("#mAdd").onclick=()=>{ PRODUCTS.forEach(p=>{ if(pack[p.id]) add(p.id, pack[p.id], true); }); toast("✅ Pedido por mayor agregado"); openCart(); };
+$("#mWa").onclick=()=>window.open(wa(orderText(pack)),"_blank");
+$("#share").onclick=async()=>{
+  const d={title:"Tilín FL · Pet Huellas", text:`Antipulgas en tableta que dura 3 meses 🐶 Si juntamos ${MAYOR_MIN} sale a precio por mayor:`, url:SITE+"#mayor"};
+  try { if(navigator.share) await navigator.share(d); else window.open("https://wa.me/?text="+encodeURIComponent(d.text+" "+d.url),"_blank"); } catch(e){}
+};
+
+document.addEventListener("click",e=>{
+  const t=s=>e.target.closest(s);
+  let b;
+  if(b=t("[data-add]")) return add(b.dataset.add);
+  if(b=t("[data-inc]")){ cart[b.dataset.inc]++; save(); return render(); }
+  if(b=t("[data-dec]")){ const k=b.dataset.dec; if(--cart[k]<=0) delete cart[k]; save(); return render(); }
+  if(t("[data-fill]")){ const top=topTilin(); if(top){ add(top.id, MAYOR_MIN-calc(cart).tilin, true); toast("🎉 ¡Precio por mayor activado!"); } return; }
+  if(b=t("[data-pinc]")){ pack[b.dataset.pinc]++; return renderPack(); }
+  if(b=t("[data-pdec]")){ const k=b.dataset.pdec; pack[k]=Math.max(0,pack[k]-1); return renderPack(); }
+  if(b=t("[data-preset]")){ const q=b.dataset.preset.split(",").map(Number); PRODUCTS.forEach((p,i)=>pack[p.id]=q[i]); return renderPack(); }
+});
+
+// Redes y WhatsApp
+const SALUDO="¡Hola Pet Huellas! 👋🐶 Vi Tilín FL en la web y tengo una consulta.";
+["#socIg","#fIg"].forEach(q=>$(q).href=INSTAGRAM);
+["#socFb","#fFb"].forEach(q=>$(q).href=FACEBOOK);
+$("#socWa").href=wa(SALUDO);
+$("#waFloat").href=wa(SALUDO);
 
 // Burbuja de bienvenida
 const chat=$("#waChat"), fab=$("#waFloat");
 const hora=()=>new Date().toLocaleTimeString("es-PE",{hour:"2-digit",minute:"2-digit"});
 const OPTS=[
-  ["main","🛒","Quiero comprar ahora","¡Hola Tilín FL! 👋🐶 Quiero comprar mi tableta antipulgas. ¿Me ayudas con el pedido?"],
-  ["","⚖️","¿Qué caja le toca a mi perro?","¡Hola Tilín FL! 👋 Mi perro pesa ___ kg. ¿Qué tableta le corresponde?"],
-  ["","❓","Tengo una consulta","¡Hola Tilín FL! 👋 Tengo una consulta sobre la tableta antipulgas:"],
+  ["main","🛒","Quiero comprar ahora","¡Hola Pet Huellas! 👋🐶 Quiero comprar Tilín FL. ¿Me ayudas con el pedido?"],
+  ["","📦","Precio por mayor (6 o más)",`¡Hola Pet Huellas! 👋 Quiero comprar Tilín FL por mayor (${MAYOR_MIN} unidades o más). ¿Me pasas la info?`],
+  ["","⚖️","¿Qué caja le toca a mi perro?","¡Hola Pet Huellas! 👋 Mi perro pesa ___ kg. ¿Qué tableta de Tilín FL le corresponde?"],
+  ["","❓","Tengo una consulta","¡Hola Pet Huellas! 👋 Tengo una consulta:"],
 ];
 let chatShown=false;
 function showChat(){
@@ -619,26 +930,34 @@ function showChat(){
   const body=$("#waBody");
   body.innerHTML='<div class="typing"><i></i><i></i><i></i></div>';
   setTimeout(()=>{
-    body.innerHTML=`<div class="msg">¡Hola! 👋🐾 Bienvenido a <b>Tilín FL</b>.<time>${hora()}</time></div>`;
+    body.innerHTML=`<div class="msg">¡Hola! 👋🐾 Bienvenido a <b>Pet Huellas</b>.<time>${hora()}</time></div>`;
     setTimeout(()=>{
-      body.innerHTML+=`<div class="msg">Estoy listo para resolver tus dudas o tomar tu pedido ahora mismo. Una tableta y tu perro queda protegido <b>3 meses</b> 🛡️ ¿En qué te ayudo?<time>${hora()}</time></div>`;
+      body.innerHTML+=`<div class="msg">Estoy listo para resolver tus dudas o tomar tu pedido ahora mismo. Con una tableta de Tilín FL tu perro queda protegido <b>3 meses</b> 🛡️ ¿En qué te ayudo?<time>${hora()}</time></div>`;
       $("#waOpts").innerHTML=OPTS.map(([c,i,t,m],k)=>`<a class="${c}" style="animation-delay:${k*.12}s" href="${wa(m)}" target="_blank" rel="noopener">${i} ${t}</a>`).join("");
     },700);
   },1100);
 }
-const hideChat=()=>chat.classList.remove("on");
+function hideChat(){ chat.classList.remove("on"); }
 fab.addEventListener("click",e=>{ e.preventDefault(); chat.classList.contains("on")?hideChat():showChat(); });
 $("#waClose").onclick=hideChat;
 // Se abre sola a los 6 s, una vez por visita
 let seen=false; try{ seen=sessionStorage.getItem("tilinChat")==="1"; }catch(e){}
 if(!seen) setTimeout(()=>{ if(!$("#drawer").classList.contains("on")){ fab.classList.add("has-msg"); showChat(); try{sessionStorage.setItem("tilinChat","1");}catch(e){} } },6000);
-$("#checkout").onclick=()=>{
-  const ids=Object.keys(cart).filter(k=>cart[k]>0); if(!ids.length) return;
-  const total=ids.reduce((a,k)=>a+cart[k]*byId(k).price,0);
-  const lines=ids.map(k=>`• ${cart[k]} x ${byId(k).name} — S/${cart[k]*byId(k).price}`).join("\n");
-  window.open(wa(`Hola 👋 Quiero hacer este pedido de Tilín FL:\n\n${lines}\n\n*Total: S/${total}*\n\nMi perro pesa aprox: ${$("#range").value} kg\nDistrito de entrega: `),"_blank");
-};
 render();
+
+// Paravetol: 1 tableta por cada 10 kg. Solo se calcula cuántas comprar; la dosis exacta es proporcional al peso
+const pvUnits = kg => Math.max(1, Math.ceil(kg/10));
+const tabs = n => n+(n===1 ? " tableta" : " tabletas");
+const pvRange=$("#pvRange");
+function pvPick(){
+  const v=+pvRange.value, u=pvUnits(v);
+  pvRange.style.setProperty("--p", ((v-1)/39*100)+"%");
+  $("#pvKg").textContent=v+" kg";
+  $("#pvTabs").innerHTML=`Para ${v} kg lleva <b>${tabs(u)}</b> · <b>${money(u*PARAVETOL.price)}</b><br><small>La dosis es proporcional a su peso.</small>`;
+  $("#pvAdd").textContent=`Agregar ${tabs(u)} 🛒`;
+}
+pvRange.addEventListener("input",pvPick); pvPick();
+$("#pvAdd").onclick=()=>add("pv", pvUnits(+pvRange.value));
 
 // Selector de peso
 const range=$("#range");
@@ -650,16 +969,35 @@ function pick(){
   const p = v<=10 ? PRODUCTS[0] : v<=20 ? PRODUCTS[1] : PRODUCTS[2];
   $("#warn").style.display = v<4.5 ? "block" : "none";
   [...$("#sizeDogs").children].forEach((s,i)=>s.classList.toggle("on", PRODUCTS[i]===p));
+  const u=pvUnits(v);
+  $("#addonTxt").textContent=`${tabs(u)} · + ${money(u*PARAVETOL.price)}`;
   if(p!==current){
     current=p;
     const box=$("#recImg"); Object.entries(p.crop).forEach(([k,val])=>box.style.setProperty("--"+k,val));
     $("#recName").textContent=p.name; $("#recPrice").textContent=p.price;
     $("#recPer").textContent=`≈ S/${perDay(p)} al día de protección`;
+    $("#recMayor").textContent=`📦 Llevando ${MAYOR_MIN} o más: ${money(p.mayor)} c/u`;
     const r=$("#rec"); r.classList.remove("swap"); void r.offsetWidth; r.classList.add("swap");
   }
 }
-range.addEventListener("input",pick); pick();
-$("#recAdd").onclick=()=>add(current.id);
+range.addEventListener("input",()=>{ pick(); pvRange.value=Math.max(1,Math.round(range.value)); pvPick(); });
+pick();
+$("#addonPv").onchange=e=>$("#addon").classList.toggle("on", e.target.checked);
+$("#recAdd").onclick=()=>{
+  if($("#addonPv").checked) add("pv", pvUnits(parseFloat(range.value)), true);
+  add(current.id);
+};
+
+// Recordatorio de la próxima dosis (Google Calendar, a 90 días)
+{
+  const d=new Date(Date.now()+90*864e5), d2=new Date(+d+864e5);
+  const f=x=>`${x.getFullYear()}${String(x.getMonth()+1).padStart(2,"0")}${String(x.getDate()).padStart(2,"0")}`;
+  $("#remind").href="https://calendar.google.com/calendar/render?action=TEMPLATE"
+    +"&text="+encodeURIComponent("🐶 Hoy le toca su Tilín FL")
+    +`&dates=${f(d)}/${f(d2)}`
+    +"&details="+encodeURIComponent("Hoy le toca su tableta antipulgas Tilín FL (y su desparasitante Paravetol Plus). Pídelos aquí: "+SITE);
+  $("#remindTxt").textContent=`Si se la das hoy, le toca el ${d.toLocaleDateString("es-PE",{day:"numeric",month:"long"})}. Se guarda en tu Google Calendar.`;
+}
 
 // Quiz
 const syms=[...document.querySelectorAll(".sym")];
@@ -684,8 +1022,10 @@ document.querySelectorAll(".qa").forEach(q=>q.querySelector("button").onclick=()
 });
 
 // Animaciones al aparecer
-const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add(e.target.id==="timeline"?"go":"in"); io.unobserve(e.target);} }),{threshold:.15});
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add(e.target.id==="timeline"?"go":"in"); io.unobserve(e.target);} }),{threshold:.12});
 document.querySelectorAll(".rv,#timeline").forEach(el=>io.observe(el));
+// Seguro: si el navegador no avisa del scroll (algunos navegadores dentro de apps), se muestra todo igual
+setTimeout(()=>{ if(!document.querySelector(".rv.in")) document.querySelectorAll(".rv").forEach(el=>el.classList.add("in")); },4000);
 
 // Barra inferior en celular
 const hero=$(".hero");
