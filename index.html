@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tilín FL · Antipulgas para perros | Pet Huellas</title>
-<meta name="description" content="Una sola tableta masticable protege a tu perro 3 meses contra pulgas, garrapatas y ácaros. Desde S/35, y por mayor desde S/25 (6 unidades). Envíos a todo el Perú.">
+<meta name="description" content="Una sola tableta masticable protege a tu perro 3 meses contra pulgas, garrapatas y ácaros. Desde S/35, y por mayor desde S/25 (6 unidades). También Tilin Cats para gatos, spray y shampoos. Envíos a todo el Perú.">
 <meta name="theme-color" content="#7B1E6C">
 <meta property="og:title" content="Tilín FL · 1 tableta = 3 meses de protección">
 <meta property="og:description" content="Antipulgas en tableta masticable. Desde S/35 · Por mayor desde S/25 · Envíos a todo el Perú · Pet Huellas.">
@@ -358,6 +358,39 @@ footer .f-links a:hover{text-decoration:underline}
 .tip button{display:block;width:100%;margin-top:8px;background:var(--plum);color:#fff;font-weight:800;border-radius:99px;padding:9px;font-size:.88rem}
 .mbar .from small{display:block;font-size:.72rem;color:#7A5200;font-weight:800}
 
+/* Tienda */
+.hero-links{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.hero-links .mayor-link{margin-bottom:0}
+.mayor-link.cat{background:#FCEAF5;color:var(--plum)}
+.filters{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+.filters button{background:#fff;border:2px solid var(--pink);color:var(--plum);font-weight:800;border-radius:99px;padding:9px 18px;transition:.2s}
+.filters button.on{background:var(--plum);border-color:var(--plum);color:#fff}
+.shop{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.shop-card{background:#fff;border-radius:26px;padding:18px;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .3s}
+.shop-card:hover{transform:translateY(-6px)}
+.shop-card[hidden]{display:none}
+.shop-card .ph{position:relative;height:236px;border-radius:18px;background:radial-gradient(circle at 50% 60%,var(--pink),var(--cream) 78%);display:grid;place-items:center;margin-bottom:14px;overflow:hidden}
+.shop-card .ph img{height:204px;width:auto;border-radius:12px;box-shadow:0 14px 22px -10px rgba(110,26,97,.5);transition:transform .4s}
+.shop-card:hover .ph img{transform:scale(1.05) rotate(-2deg)}
+.shop-card .who{position:absolute;top:10px;left:10px;background:#fff;border-radius:99px;padding:4px 10px;font-weight:800;font-size:.75rem;color:var(--plum)}
+.shop-card h3{font-size:1.3rem;margin-bottom:4px}
+.shop-card p{color:var(--muted);font-size:.92rem;margin-bottom:10px}
+.shop-card ul{list-style:none;font-size:.88rem;font-weight:700;color:var(--plum);margin-bottom:12px;display:grid;gap:3px}
+.shop-card li::before{content:"✓ ";color:var(--green)}
+.vars{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.vars button{border:2px solid var(--cream-2);border-radius:12px;padding:6px 10px;font-weight:800;font-size:.8rem;color:var(--muted);transition:.2s}
+.vars button.on{border-color:var(--magenta);background:#FCEAF5;color:var(--plum)}
+.shop-card .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.shop-card .pr{font-family:"Baloo 2";font-weight:800;font-size:1.9rem;color:var(--plum);line-height:1}
+.shop-card .foot .btn{padding:11px 18px;font-size:.95rem}
+.shop-card.help{background:linear-gradient(160deg,var(--plum),#4A1042);color:#fff;justify-content:center;align-items:center;text-align:center;gap:10px;padding:28px 22px}
+.shop-card.help .big{font-size:3.2rem;line-height:1}
+.shop-card.help h3{font-size:1.5rem;margin:0}
+.shop-card.help p{color:#E9C9E1;margin:0 0 8px}
+.swipe-hint{display:none;text-align:center;color:var(--muted);font-weight:700;font-size:.85rem}
+.item img.th{height:72px;object-fit:cover}
+.upsell img{height:54px;object-fit:cover}
+
 /* Animación al hacer scroll */
 .rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
 .rv.in{opacity:1;transform:none}
@@ -407,6 +440,12 @@ footer .f-links a:hover{text-decoration:underline}
   .pv-facts div{padding:10px 8px;font-size:.8rem}
   .pv-out .btn{width:100%}
   .social{grid-template-columns:1fr;max-width:420px}
+  .filters{gap:6px;margin-bottom:18px;flex-wrap:nowrap}
+  .filters button{padding:7px 11px;font-size:.85rem;white-space:nowrap}
+  .shop{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -16px;padding:6px 16px 20px;scrollbar-width:none}
+  .shop::-webkit-scrollbar{display:none}
+  .shop-card{flex:0 0 80%;scroll-snap-align:center}
+  .swipe-hint{display:block}
   .wa-float{bottom:90px;width:54px;height:54px}
   .wa-chat{right:16px;bottom:156px}
   .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;padding:12px 16px calc(12px + env(safe-area-inset-bottom));gap:12px;align-items:center;box-shadow:0 -10px 30px -10px rgba(110,26,97,.35);transform:translateY(110%);transition:transform .35s}
@@ -421,15 +460,15 @@ footer .f-links a:hover{text-decoration:underline}
 <body>
 
 <div class="topbar"><div class="track" aria-hidden="true">
-  <span>🐾 1 tableta = 3 meses de protección</span><span>🚚 Envíos a todo el Perú</span><span>📦 Por mayor desde 6 unidades: desde S/25</span><span>💬 Pide fácil por WhatsApp</span><span>🌿 Con silimarina, protector hepático</span>
-  <span>🐾 1 tableta = 3 meses de protección</span><span>🚚 Envíos a todo el Perú</span><span>📦 Por mayor desde 6 unidades: desde S/25</span><span>💬 Pide fácil por WhatsApp</span><span>🌿 Con silimarina, protector hepático</span>
+  <span>🐾 1 tableta = 3 meses de protección</span><span>🚚 Envíos a todo el Perú</span><span>📦 Por mayor desde 6 unidades: desde S/25</span><span>🐱 También para gatos: Tilin Cats</span><span>💬 Pide fácil por WhatsApp</span><span>🌿 Con silimarina, protector hepático</span>
+  <span>🐾 1 tableta = 3 meses de protección</span><span>🚚 Envíos a todo el Perú</span><span>📦 Por mayor desde 6 unidades: desde S/25</span><span>🐱 También para gatos: Tilin Cats</span><span>💬 Pide fácil por WhatsApp</span><span>🌿 Con silimarina, protector hepático</span>
 </div></div>
 
 <nav>
   <div class="wrap">
     <a href="#" class="logo">TILÍN <span>FL</span><small>por Pet Huellas</small></a>
     <div class="links">
-      <a href="#elige">Elige su tableta</a><a href="#mayor">Por mayor</a><a href="#paravetol">Desparasitante</a><a href="#como">Cómo funciona</a><a href="#faq">Preguntas</a>
+      <a href="#elige">Elige su tableta</a><a href="#mayor">Por mayor</a><a href="#paravetol">Desparasitante</a><a href="#tienda">Más productos</a><a href="#faq">Preguntas</a>
     </div>
     <button class="cart-btn" id="cartBtn" aria-label="Abrir carrito">🛒 <span class="count" id="cartCount">0</span></button>
   </div>
@@ -447,7 +486,10 @@ footer .f-links a:hover{text-decoration:underline}
         <a href="#elige" class="btn btn-main pulse">Elegir su tableta →</a>
         <a href="#senales" class="btn btn-ghost">¿Mi perro lo necesita?</a>
       </div>
-      <a href="#mayor" class="mayor-link rv d3">📦 ¿Llevas 6 o más? <b>Precio por mayor desde S/25</b> →</a>
+      <div class="hero-links rv d3">
+        <a href="#mayor" class="mayor-link">📦 ¿Llevas 6 o más? <b>Por mayor desde S/25</b> →</a>
+        <a href="#tienda" data-f="gatos" class="mayor-link cat">🐱 ¿Tienes gato? <b>Tilin Cats</b> →</a>
+      </div>
       <div class="trust rv d3">
         <div>✅ Elimina y previene</div><div>🌿 Con silimarina</div><div>🚚 Envíos a todo el Perú</div>
       </div>
@@ -607,6 +649,22 @@ footer .f-links a:hover{text-decoration:underline}
   </div>
 </section>
 
+<!-- TIENDA -->
+<section id="tienda" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">🛍️ Más de Pet Huellas</span>
+      <h2>Todo para tu <span class="hl">engreído</span></h2>
+      <p>Antipulgas para gatos, spray y shampoos. Súmalos al mismo pedido y te llega todo junto.</p>
+    </div>
+    <div class="filters rv" id="filters">
+      <button class="on" data-f="todos">Todos</button><button data-f="perros">🐶 Perros</button><button data-f="gatos">🐱 Gatos</button><button data-f="bano">🛁 Baño</button>
+    </div>
+    <div class="shop rv" id="shop"></div>
+    <p class="swipe-hint">Desliza para ver más →</p>
+  </div>
+</section>
+
 <!-- BENEFICIOS -->
 <section style="padding-top:10px">
   <div class="wrap">
@@ -676,6 +734,7 @@ footer .f-links a:hover{text-decoration:underline}
       <div class="qa rv"><button>¿Cómo funciona el precio por mayor? <i>+</i></button><div class="ans"><p>Desde 6 unidades de Tilín FL pagas S/25, S/27.50 o S/30 por caja según el tamaño. Puedes combinar tamaños y el carrito aplica el descuento solo.</p></div></div>
       <div class="qa rv"><button>¿Hacen envíos a provincia? <i>+</i></button><div class="ans"><p>Sí, Pet Huellas envía a todo el Perú. El costo y el tiempo de envío se coordinan por WhatsApp según tu ciudad.</p></div></div>
       <div class="qa rv"><button>¿Paravetol Plus sirve para gatos? <i>+</i></button><div class="ans"><p>Sí, es para perros y gatos desde las 4 semanas de edad: 1 tableta por cada 10 kg de peso, cada 3 meses. Tilín FL, en cambio, es solo para perros.</p></div></div>
+      <div class="qa rv"><button>¿Tienen antipulgas para gatos? <i>+</i></button><div class="ans"><p>Sí: Tilin Cats Spot On, una pipeta de uso externo. Hay para gatos de 1 a 3.5 kg (0.7 ml) y de hasta 6 kg (1 ml). La tableta Tilín FL es solo para perros.</p></div></div>
       <div class="qa rv"><button>¿Cómo hago mi pedido? <i>+</i></button><div class="ans"><p>Agrega tus productos al carrito y toca "Pedir por WhatsApp". Te llega el pedido listo y coordinamos la entrega y el pago.</p></div></div>
     </div>
   </div>
@@ -725,7 +784,7 @@ footer .f-links a:hover{text-decoration:underline}
   <div class="logo">TILÍN <span>FL</span></div>
   <div class="store">🐾 Pet Huellas</div>
   <p>Envíos a todo el Perú · WhatsApp 932 595 200</p>
-  <div class="f-links"><a id="fIg" href="#" target="_blank" rel="noopener">Instagram</a><a id="fFb" href="#" target="_blank" rel="noopener">Facebook</a><a href="#mayor">Precio por mayor</a><a href="#faq">Preguntas</a></div>
+  <div class="f-links"><a id="fIg" href="#" target="_blank" rel="noopener">Instagram</a><a id="fFb" href="#" target="_blank" rel="noopener">Facebook</a><a href="#mayor">Precio por mayor</a><a href="#tienda">Más productos</a><a href="#faq">Preguntas</a></div>
   <p>Productos de uso veterinario. Lee las indicaciones del empaque y consulta a tu veterinario.</p>
 </footer>
 
@@ -770,15 +829,40 @@ const PRODUCTS = [
   { id:"m", name:"Tilín FL 10 a 20 kg",  kg:"10 a 20 kg",  price:40, mayor:27.5, color:"c-pink",  crop:{x:255,y:944, w:177, h:340}, dog:"Mediano", pop:true },
   { id:"l", name:"Tilín FL 20 a 40 kg",  kg:"20 a 40 kg",  price:45, mayor:30,   color:"c-green", crop:{x:450,y:944, w:178, h:340}, dog:"Grande" },
 ];
-const PARAVETOL = { id:"pv", name:"Paravetol Plus (tableta)", price:5, img:"img/paravetol.jpg" };
+const PARAVETOL = { id:"pv", name:"Paravetol Plus (tableta)", short:"Paravetol Plus", price:5, img:"img/paravetol.jpg", note:"1 por cada 10 kg" };
+// Tienda: cada tarjeta puede tener variantes (tamaños) y cada variante es un producto del carrito
+const SHOP = [
+  { tags:["gatos"], who:"🐱 Gatos", title:"Tilin Cats Spot On",
+    text:"Pipeta antipulgas de uso externo. Elige según el peso de tu gato.",
+    pts:["Pulgas, garrapatas, larvas y huevos","Fipronil + Metopreno"],
+    vars:[ { id:"cat07", label:"1 a 3.5 kg · 0.7 ml", name:"Tilin Cats Spot On 0.7 ml (1 a 3.5 kg)", price:20, img:"img/tilin-cats-07.jpg", pos:"center 30%" },
+           { id:"cat1",  label:"Hasta 6 kg · 1 ml",   name:"Tilin Cats Spot On 1 ml (hasta 6 kg)",   price:20, img:"img/tilin-cats-1.jpg",  pos:"center 30%" } ] },
+  { tags:["perros"], who:"🐶 Perros", title:"Tilin Antipulgas en spray",
+    text:"Solución dérmica: 3 ml por kilo en el lomo, evitando los ojos.",
+    pts:["Elimina pulgas y garrapatas","Acción hasta por 90 días"],
+    vars:[ { id:"sp180", label:"180 ml", name:"Tilin Antipulgas spray 180 ml", price:15, img:"img/tilin-spray.jpg", pos:"left 85%" },
+           { id:"sp500", label:"500 ml", name:"Tilin Antipulgas spray 500 ml", price:25, img:"img/tilin-spray.jpg", pos:"right 75%" } ] },
+  { tags:["perros","bano"], who:"🐶 Perros", title:"Pillin Shampoo Antipulgas 1.1 L",
+    text:"Shampoo medicado: protección y suavidad en cada baño.",
+    pts:["Elimina pulgas y garrapatas","Fipronil + Amitraz","Exclusivo para perros"],
+    vars:[ { id:"shmed", name:"Pillin Shampoo Antipulgas 1.1 L", price:21, img:"img/pillin-medicado.jpg", pos:"center 78%" } ] },
+  { tags:["perros","gatos","bano"], who:"🐶🐱 Perros y gatos", title:"Pillin Shampoo de Avena 1.1 L",
+    text:"Shampoo cosmético con avena para el baño de siempre.",
+    pts:["Hidrata y cuida la piel","Alivia la picazón","Limpieza, suavidad y brillo"],
+    vars:[ { id:"shave", name:"Pillin Shampoo de Avena 1.1 L", price:21, img:"img/pillin-avena.jpg", pos:"center 78%" } ] },
+  { tags:["perros","bano"], who:"🐶 Perros", title:"Pillin Shampoo Antipulgas en sachet",
+    text:"Sachet de 70 ml para un baño. Ideal para probarlo.",
+    pts:["Elimina y previene pulgas y garrapatas","Permetrina · aroma fresco","Exclusivo para perros"],
+    vars:[ { id:"shsac", name:"Pillin Shampoo Antipulgas sachet 70 ml", short:"Shampoo Pillin en sachet", price:3, img:"img/pillin-sachet.jpg", pos:"center 15%" } ] },
+];
 /* ============================ */
 
 const $ = s => document.querySelector(s);
 const money = n => "S/" + (Number.isInteger(n) ? n : n.toFixed(2));
-const ALL = [...PRODUCTS, PARAVETOL];
+const ALL = [...PRODUCTS, PARAVETOL, ...SHOP.flatMap(c=>c.vars)];
 const byId = id => ALL.find(p=>p.id===id);
 const cropHTML = (p, extra="") => `<div class="crop ${extra}" style="--x:${p.crop.x};--y:${p.crop.y};--w:${p.crop.w};--h:${p.crop.h}"><img src="img/flyer.jpg" alt="Caja ${p.name}" loading="lazy"></div>`;
-const thumb = p => p.crop ? cropHTML(p) : `<img class="th" src="${p.img}" alt="${p.name}" loading="lazy">`;
+const thumb = p => p.crop ? cropHTML(p) : `<img class="th" src="${p.img}" alt="${p.name}" loading="lazy" style="object-position:${p.pos||"center"}">`;
 const perDay = p => (p.price/90).toFixed(2);
 const wa = txt => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(txt)}`;
 
@@ -794,6 +878,28 @@ $("#products").innerHTML = PRODUCTS.map((p,i)=>`
     <button class="btn btn-main" data-add="${p.id}">Agregar al carrito</button>
   </div>`).join("");
 $("#finalBoxes").innerHTML = PRODUCTS.map(p=>cropHTML(p)).join("");
+
+// Tienda
+$("#shop").innerHTML = SHOP.map(c=>{ const v=c.vars[0]; return `
+  <article class="shop-card" data-tags="${c.tags.join(" ")}">
+    <div class="ph"><img src="${v.img}" alt="${c.title}" loading="lazy"><span class="who">${c.who}</span></div>
+    <h3>${c.title}</h3>
+    <p>${c.text}</p>
+    <ul>${c.pts.map(x=>`<li>${x}</li>`).join("")}</ul>
+    ${c.vars.length>1 ? `<div class="vars">${c.vars.map((x,k)=>`<button class="${k ? "" : "on"}" data-var="${x.id}">${x.label}</button>`).join("")}</div>` : ""}
+    <div class="foot"><span class="pr">${money(v.price)}</span><button class="btn btn-main" data-add="${v.id}">Agregar 🛒</button></div>
+  </article>`; }).join("") + `
+  <article class="shop-card help" data-tags="perros gatos bano">
+    <div class="big">🤔</div>
+    <h3>¿No sabes cuál elegir?</h3>
+    <p>Cuéntanos qué mascota tienes y cuánto pesa. Te recomendamos lo justo, sin compromiso.</p>
+    <a class="btn btn-wa" target="_blank" rel="noopener" href="${wa("¡Hola Pet Huellas! 👋 No sé qué producto elegir para mi mascota. ¿Me ayudan?")}">💬 Preguntar por WhatsApp</a>
+  </article>`;
+function setFilter(f){
+  document.querySelectorAll("#filters button").forEach(x=>x.classList.toggle("on", x.dataset.f===f));
+  document.querySelectorAll(".shop-card").forEach(c=>c.hidden = f!=="todos" && !c.dataset.tags.split(" ").includes(f));
+  $("#shop").scrollLeft=0;
+}
 
 // Precios: desde MAYOR_MIN cajas de Tilín FL (combinando tamaños) todas pasan a precio por mayor
 function calc(c){
@@ -834,17 +940,21 @@ function render(){
   $("#cartCount").textContent=r.n;
   $("#total").innerHTML=(r.mayor ? `<s>${money(r.normal)}</s>` : "")+money(r.total);
   let html = r.ids.map(k=>{ const p=byId(k), u=r.unit(p);
-    const sub = !p.crop ? `${money(u)} c/u · 1 por cada 10 kg`
+    const sub = !p.crop ? `${money(u)} c/u${p.note ? " · "+p.note : ""}`
       : r.mayor ? `<s>${money(p.price)}</s> <b style="color:#11713A">${money(u)} c/u</b>`
       : `${money(u)} c/u · ${cart[k]*3} meses`;
     return `
     <div class="item">${thumb(p)}<div><h4>${p.name}</h4><small>${sub}</small></div>
     <div class="qty"><button data-dec="${k}" aria-label="Quitar uno">−</button><b>${cart[k]}</b><button data-inc="${k}" aria-label="Agregar uno">+</button></div></div>`; }).join("");
   if(!r.ids.length) html=`<div class="empty"><div>🐶</div><p>Tu carrito está vacío.<br>Elige la tableta según el peso de tu perro.</p></div>`;
-  else if(!cart.pv) html+=`
-    <div class="upsell"><img src="${PARAVETOL.img}" alt="Paravetol Plus" loading="lazy">
-    <div>Súmale el desparasitante<br><b>Paravetol Plus · ${money(PARAVETOL.price)}</b></div>
-    <button data-add="pv">+ Agregar</button></div>`;
+  else {
+    // Sugerencia barata que aún no lleva: primero el desparasitante, después el sachet de shampoo
+    const up=[["pv","Súmale el desparasitante"],["shsac","¿Y un baño antipulgas?"]].find(([id])=>!cart[id]);
+    if(up){ const p=byId(up[0]); html+=`
+    <div class="upsell"><img src="${p.img}" alt="${p.short}" loading="lazy" style="object-position:${p.pos||"center"}">
+    <div>${up[1]}<br><b>${p.short} · ${money(p.price)}</b></div>
+    <button data-add="${p.id}">+ Agregar</button></div>`; }
+  }
   $("#items").innerHTML=html;
 
   const tip=$("#tip");
@@ -899,6 +1009,11 @@ document.addEventListener("click",e=>{
   const t=s=>e.target.closest(s);
   let b;
   if(b=t("[data-add]")) return add(b.dataset.add);
+  if(b=t("[data-f]")){ setFilter(b.dataset.f); if(b.tagName!=="A") return; } // los enlaces filtran y además bajan a la tienda
+  if(b=t("[data-var]")){ const card=b.closest(".shop-card"), v=byId(b.dataset.var);
+    card.querySelectorAll("[data-var]").forEach(x=>x.classList.toggle("on", x===b));
+    card.querySelector(".ph img").src=v.img; card.querySelector(".pr").textContent=money(v.price);
+    card.querySelector("[data-add]").dataset.add=v.id; return; }
   if(b=t("[data-inc]")){ cart[b.dataset.inc]++; save(); return render(); }
   if(b=t("[data-dec]")){ const k=b.dataset.dec; if(--cart[k]<=0) delete cart[k]; save(); return render(); }
   if(t("[data-fill]")){ const top=topTilin(); if(top){ add(top.id, MAYOR_MIN-calc(cart).tilin, true); toast("🎉 ¡Precio por mayor activado!"); } return; }
